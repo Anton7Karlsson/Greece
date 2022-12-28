@@ -1,0 +1,318 @@
+[
+	{
+		"Name": "Agistri",
+		"Location": "Saroniska öarna",
+		"Details": "Agistri är en grekisk ö som ligger i Saroniska bukten mellan Aten och Peloponnesoshalvön.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_514913230_argosaronic-agistri_1750x680.jpg",
+		"Population": 1000,
+		"Latitude": 37.709358,
+		"Longitude": 23.346671
+	},
+	{
+		"Name": "Amorgos",
+		"Location": "Kykladerna",
+		"Details": "Amorgos är en avlång ö med stundtals branta klippor och mjuka stränder.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_171296073_amorgos-agannabeach_1310x769.jpg",
+		"Population": 1800,
+		"Latitude": 36.840018,
+		"Longitude": 25.887664
+	},
+	{
+		"Name": "Anafi",
+		"Location": "Kykladerna",
+		"Details": "Anafi är en grekisk ö bland Kykladerna, öster om Santorini, ön är drygt 40km² stor.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1138199974_anafi_1743x752.webp",
+		"Population": 270,
+		"Latitude": 36.373444,
+		"Longitude": 25.7773
+	},
+	{
+		"Name": "Andros",
+		"Location": "Kykladerna",
+		"Details": "Andros är den nordligaste ön i Kykladerna. Dess yta är bergig, med många blomstrande dalar.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1286491078_andros-chora_1743x752.webp",
+		"Population": 9000,
+		"Latitude": 37.838147,
+		"Longitude": 24.938594
+	},
+	{
+		"Name": "Antiparos",
+		"Location": "Kykladerna",
+		"Details": "Ön ligger väster om Paros, skild från denna av ett smalt sund, och har en del mycket långgrunda stränder. På sydvästra kusten finns en god hamn.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_550081510_antiparos_1743x752.webp",
+		"Population": 1000,
+		"Latitude": 37.040483,
+		"Longitude": 25.083154
+	},
+	{
+		"Name": "Antipaxos",
+		"Location": "Joniska öarna",
+		"Details": "Antipaxos är en ö söder om Paxos, ön är känd för sina spektakulära stränder",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_653285293_antipaxoi-voutoumi_1743x752.webp",
+		"Population": 30,
+		"Latitude": 39.149011,
+		"Longitude": 20.232586
+	},
+	{
+		"Name": "Astypalaia",
+		"Location": "Dodekaneserna",
+		"Details": "Astypalaia är egentligen två öar förenade av en smal landtunga.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/merakos_02_astypalea-chora_1743x752.webp",
+		"Population": 3000,
+		"Latitude": 36.538981,
+		"Longitude": 26.313136
+	},
+	{
+		"Name": "Chalki",
+		"Location": "Dodekaneserna",
+		"Details": "Chalki är en mindre grekisk ö väster om Rhodos och är den minsta bebodda ön i Dodekaneserna.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1140596834_chalki_1743x752.webp",
+		"Population": 330,
+		"Latitude": 36.226965,
+		"Longitude": 27.570283
+	},
+	{
+		"Name": "Chios",
+		"Location": "Nordegeiska öarna",
+		"Details": "Chios är en ö strax utanför Turkiets kust. Ön är berömd för sitt landskap och goda klimat.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/filippini_33_chios-mavravolia_1743x752.jpg",
+		"Population": 54.000,
+		"Latitude": 38.368182,
+		"Longitude": 26.131006
+	},
+	{
+		"Name": "Delos",
+		"Location": "Kykladerna",
+		"Details": "Delos är med sin yta på 5 km² minst bland öarna i Kykladerna, men på grund av sin betydelse under antiken den mest berömda av dom.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_730243063_delos_1743x752.webp",
+		"Population": 14,
+		"Latitude": 37.396262,
+		"Longitude": 25.268941
+	},
+	{
+		"Name": "Egina",
+		"Location": "Saroniska öarna",
+		"Details": "Egina som även kallas Aegina är en ö i Saroniska öarna och ligger 25km från Aten. Egina har blivit ett omtyckt turistmål, inte minst av atenarna själva.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_477810265_aegina-afaia_1743x752.jpg",
+		"Population": 12.000,
+		"Latitude": 37.740882,
+		"Longitude": 23.501421
+	},
+	{
+		"Name": "Euboia",
+		"Location": "Fastlandet",
+		"Details": "Euboia är efter Kreta den näst största ön i den grekiska skärgården. Den åtskiljs från det grekiska fastlandet av Euboiabukten.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_1784476238_evia-chalkida_1743x752.webp",
+		"Population": 191.206,
+		"Latitude": 38.494172,
+		"Longitude": 23.911084
+	},
+	{
+		"Name": "Gavdos",
+		"Location": "Kreta",
+		"Details": "Gavdos är en liten ö utanför ön Kreta. Ön är den sydligaste punkten i Europa.",
+		"Image": "https://www.cretetravel.com/modules/hotels/fotografies/guides/South_Crete/35/Gavdos_Island_20.jpg",
+		"Population": 150,
+		"Latitude": 34.846225,
+		"Longitude": 24.084478
+	},
+	{
+		"Name": "Hydra",
+		"Location": "Saroniska öarna",
+		"Details": "Hydra är lånsträckt och bergigt, och åtskiljs från Peloponnesos av ett smalt sund. Motorfordon är inte tillåtna på ön.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_476968604_hydra_750x440.jpg",
+		"Population": 2000,
+		"Latitude": 37.334508,
+		"Longitude": 23.463128
+	},
+	{
+		"Name": "Ikaria",
+		"Location": "Nordegeiska öarna",
+		"Details": "Ikaria är en ö som tillhör de Nordegeiska öarna, ön har en kustlängd på 102km.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1299114793_ikaria_1743x752.webp",
+		"Population": 8423,
+		"Latitude": 37.596723,
+		"Longitude": 26.112308
+	},
+	{
+		"Name": "Ios",
+		"Location": "Kykladerna",
+		"Details": "Ios är en ö i Kykladerna som ligger mellan Naxos och Santorini.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_903169004_ios_1743x752.webp",
+		"Population": 2024,
+		"Latitude": 36.723303,
+		"Longitude": 25.282278
+	},
+	{
+		"Name": "Ithaka",
+		"Location": "Joniska öarna",
+		"Details": "Ithaka är en ö utanför Greklands västkust, nordöst om den större ön Kefalinia.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_1017594073__ithaka-vathy_port_1310x769.jpg",
+		"Population": 3231,
+		"Latitude": 38.432507,
+		"Longitude": 20.668334
+	},
+	{
+		"Name": "Kalymnos",
+		"Location": "Dodekaneserna",
+		"Details": "Ön är bergig, har flera intressanta grottor och har på senare år blivit ett populärt mål för klättring.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_607447103_kalymnos_1743x752.webp",
+		"Population": 16.000,
+		"Latitude": 36.953309,
+		"Longitude": 26.979813
+	},
+	{
+		"Name": "Karpathos",
+		"Location": "Dodekaneserna",
+		"Details": "Ön är belägen halvvägs mellan Rhodos och Kreta och är den näst största ön av Dodekaneserna.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_509853762_karpathos_1743x752.webp",
+		"Population": 6000,
+		"Latitude": 35.506869,
+		"Longitude": 27.213067
+	},
+	{
+		"Name": "Kefalinia",
+		"Location": "Joniska öarna",
+		"Details": "Den största av de Joniska öarna. Ön är belägen mitt emot Patrasviken och skiljs i öster från Ithaka genom det 7km breda Viskardosundet.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_01_kefalonia-assos_1310x769.jpg",
+		"Population": 40.000,
+		"Latitude": 38.237934,
+		"Longitude": 20.560883
+	},
+	{
+		"Name": "Korfu",
+		"Location": "Joniska öarna",
+		"Details": "Korfu är den nordligaste av de Joniska öarna och ligger utanför Greklands och Albaniens kust.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_635764444_corfu-palaiokastritsa_1310x769.jpg",
+		"Population": 105.000,
+		"Latitude": 39.624262,
+		"Longitude": 19.921678
+	},
+	{
+		"Name": "Kos",
+		"Location": "Dodekaneserna",
+		"Details": "Kos är belägen utanför Turkiets sydvästra kust. Ön räknas som den grönaste och bördigaste av Dodekaneserna.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/skoulas_5243_kos-agiosstefanosbasilica_1743x752.webp",
+		"Population": 30.000,
+		"Latitude": 36.891506,
+		"Longitude": 27.287723
+	},
+	{
+		"Name": "Kreta",
+		"Location": "Kreta",
+		"Details": "Kreta är den största och folkrikaste av de grekiska öarna och den femte största ön i Medelhavet.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/2/jpg/files/s_1217691214_crete-elafonisi_1743x752.jpg",
+		"Population": 650.000,
+		"Latitude": 35.240117,
+		"Longitude": 24.809269
+	},
+	{
+		"Name": "Kythera",
+		"Location": "Joniska öarna",
+		"Details": "Kythera är en ö söder om Peloponnesos. Under antiken var ön tillägnad kärleksgudinnan Afrodite.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/filippini_46_kythira_1743x752.jpg",
+		"Population": 2500,
+		"Latitude": 36.25,
+		"Longitude": 23
+	},
+	{
+		"Name": "Lefkas",
+		"Location": "Joniska öarna",
+		"Details": "Lefkas är ansluten med det Grekiska fastlandet genom en lång gångbana och en flytande bro.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_326882015_lefkada-portokatsiki_1310x769.jpg",
+		"Population": 21.000,
+		"Latitude": 38.706646,
+		"Longitude": 20.64073
+	},
+	{
+		"Name": "Lemnos",
+		"Location": "Nordegeiska öarna",
+		"Details": "Lemnos är en 476 km² stor ö i Egeiska havet",
+		"Image": "https://www.visitgreece.gr/images/1310x769/2/jpg/files/s_1492691108_lemnos_1743x752.jpg",
+		"Population": 17.000,
+		"Latitude": 39.919841,
+		"Longitude": 25.141484
+	},
+	{
+		"Name": "Lesbos",
+		"Location": "Nordegeiska öarna",
+		"Details": "Lesbos är den tredje största ön i Grekland och den åttonde största i Medelhavet.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1162556431_lesvos_1743x752.jpg",
+		"Population": 100.000,
+		"Latitude": 39.26451,
+		"Longitude": 26.277707
+	},
+	{
+		"Name": "Milos",
+		"Location": "Kykladerna",
+		"Details": "Milos är en ö i sydvästra delen av Egeiska havet.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1225938906_milos-mandrakia_1310x769.jpg",
+		"Population": 5000,
+		"Latitude": 36.709344,
+		"Longitude": 24.506834
+	},
+	{
+		"Name": "Mykonos",
+		"Location": "Kykladerna",
+		"Details": "Mykonos är en grekisk ö i Egeiska havet och är ett populärt mål för badturister.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_249496996_mykonos_1743x752.webp",
+		"Population": 10.000,
+		"Latitude": 37.446735,
+		"Longitude": 25.328884
+	},
+	{
+		"Name": "Naxos",
+		"Location": "Kykladerna",
+		"Details": "Naxos är den största ön bland Kykladerna. Naxos är en mycket bergig ö med bördiga dalar.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1140594041_naxos-portara_1743x752.jpg",
+		"Population": 17.000,
+		"Latitude": 37.102103,
+		"Longitude": 25.376114
+	},
+	{
+		"Name": "Paros",
+		"Location": "Kykladerna",
+		"Details": "Paros är bland de största av Kykladerna och består till största delen av ett berg.",
+		"Image": "https://www.visitgreece.gr/images/1310x769/2/jpg/files/merakos_02_paros-naousa_1743x752.jpg",
+		"Population": 8000,
+		"Latitude": 37.085394,
+		"Longitude": 25.151534
+	},
+	{
+		"Name": "Paxos",
+		"Location": "Joniska öarna",
+		"Details": "Paxos är bland de mindre av de Joniska öarna. Jämfört med många andra grekiska öar är Paxos en mycket grön ö med många träd.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_635764610_paxoi_1743x752.webp",
+		"Population": 2000,
+		"Latitude": 39.209854,
+		"Longitude": 20.158128
+	},
+	{
+		"Name": "Rhodos",
+		"Location": "Dodekaneserna",
+		"Details": "Rhodos är der sydostligaste och största ön av Dodekaneserna. På Rhodos fanns kolossen på Rhodos, ett av världens sju underverk.",
+		"Image": "https://img.ving.se/image/upload/c_scale,w_1280,f_avif,q_auto:eco/images/AreaGeneric/108122_1001_57_131.jpg?v=31",
+		"Population": 133.000,
+		"Latitude": 36.434053,
+		"Longitude": 28.217638
+	},
+	{
+		"Name": "Santorini",
+		"Location": "Kykladerna",
+		"Details": "Santorini är ett av Greklands främsta turistmål. Santorini kallades tidigare för Thera.",
+		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/merakos_05_santorini-oia_1743x752.webp",
+		"Population": 15.500,
+		"Latitude": 36.393156,
+		"Longitude": 25.461509
+	},
+	{
+		"Name": "Zakynthos",
+		"Location": "Joniska öarna",
+		"Details": "Zakynthos består av berg klädda med pinje och på sydkusten finns det fina sandstränder.",
+		"Image": "https://www.visitgreece.gr/islands/ionian-islands/zakynthos/",
+		"Population": 40.000,
+		"Latitude": 37.787033,
+		"Longitude": 20.899876
+	},
+	
+]
