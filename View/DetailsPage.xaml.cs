@@ -1,9 +1,11 @@
 namespace Greece.View;
 
-public partial class DetailsPage : ContentView
+public partial class DetailsPage : ContentPage
 {
-	public DetailsPage()
+	
+	public DetailsPage(IslandsDetailsViewModel viewModel)
 	{
 		InitializeComponent();
+		BindingContext = viewModel;
 	}
 }
