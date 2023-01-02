@@ -11,40 +11,36 @@
             <Grid ColumnDefinitions="*,Auto,*"
                   RowDefinitions="160, Auto">
 
-                <BoxView BackgroundColor="DarkBlue"
-                         Grid.ColumnSpan="3"
-                         HeightRequest="160"
-                         HorizontalOptions="FillAndExpand"/> <!--Lägg bilden här i stället för i cirkeln, ta bort cirkeln-->
-
-                <Frame Grid.RowSpan="2"
-                       Grid.Column="1"
-                       HeightRequest="160"
-                       WidthRequest="160"
-                       CornerRadius="80"
-                       HorizontalOptions="Center"
-                       IsClippedToBounds="True"
-                       Padding="0"
-                       Margin="0,80,0,0">
-
-                    <Image Aspect="AspectFill"
+                <Image Aspect="AspectFill"
+                           Grid.ColumnSpan="3"
                            HeightRequest="160"
-                           WidthRequest="160"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand"
                            Source="{Binding Island.Image}"/>
-                </Frame>
 
             </Grid>
-                
+
+            <Button Text="Show on Map"
+                    Command="{Binding OpenMapCommand}"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    Margin="8"
+                    BackgroundColor="Transparent"
+                    TextColor="DarkBlue"
+                    BorderColor="DarkBlue"
+                    BorderWidth="2"/>
+
             <VerticalStackLayout Padding="10" Spacing="10">
-                <Label Text="{Binding Island.Details}"
-                       FontSize="20"/>
-                <Label Text="{Binding Island.Location, StringFormat='Location: {0}'}"
+                <Label Text="{Binding Island.Location, StringFormat='Ögrupp: {0}'}"
                        FontSize="16"/>
+                
                 <Label Text="{Binding Island.Population, StringFormat='Population: {0}'}"
                        FontSize="16"/>
+                <Frame>
+                    <Label Text="{Binding Island.Details}"
+                       FontSize="20"/>
+                </Frame>
             </VerticalStackLayout>
-            
-        </VerticalStackLayout>    
+
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

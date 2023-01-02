@@ -24,6 +24,9 @@ namespace Greece.ViewModel
             this.geolocation = geolocation;
         }
 
+        [ObservableProperty]
+        bool isRefreshing;
+
         [RelayCommand]
         async Task GetClosestIslandAsync()
         {
@@ -32,7 +35,28 @@ namespace Greece.ViewModel
 
             try
             {
+                var location = await geolocation.GetLastKnownLocationAsync();
+                if(location is null)
+                {
+                    location = await geolocation.GetLocationAsync(
+                        new GeolocationRequest
+                        {
+                            DesiredAccuracy = GeolocationAccuracy.Medium,
+                            Timeout = TimeSpan.FromSeconds(30),
+                        });
+                }
 
+                if (location is null)
+                    return;
+
+                var first = Islands.OrderBy(m => 
+                    location.CalculateDistance(m.Latitude, m.Longitude, DistanceUnits.Kilometers)).FirstOrDefault();
+
+                if (first is null)
+                    return;
+
+                await Shell.Current.DisplayAlert("Closest Island",
+                    $"{first.Name} in {first.Location}", "OK");
             }
             catch(Exception ex)
             {
@@ -57,6 +81,7 @@ namespace Greece.ViewModel
         [RelayCommand]
         async Task GetIslandsAsync()
         {
+
             if (IsBusy) return;
 
             try
@@ -87,6 +112,7 @@ namespace Greece.ViewModel
             finally
             {
                 IsBusy = false;
+                IsRefreshing= false;
             }
         }
     }
