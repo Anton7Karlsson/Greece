@@ -30,7 +30,7 @@
                     BorderWidth="2"/>
 
             <VerticalStackLayout Padding="10" Spacing="10">
-                <Label Text="{Binding Island.Location, StringFormat='Ögrupp: {0}'}"
+                <Label Text="{Binding Island.IslandGroup, StringFormat='Ögrupp: {0}'}"
                        FontSize="16"/>
                 
                 <Label Text="{Binding Island.Population, StringFormat='Population: {0}'}"

@@ -28,7 +28,7 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
+	<key>NSIslandGroupWhenInUseUsageDescription</key>
 	<string>Need to find islands!</string>
 </dict>
 </plist>

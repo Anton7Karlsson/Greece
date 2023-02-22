@@ -1,93 +1,221 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:model="clr-namespace:Greece.Model"
              xmlns:viewmodel="clr-namespace:Greece.ViewModel"
-             x:DataType="viewmodel:IslandsViewModel"
-             Title="{Binding Title}"
-             x:Class="Greece.MainPage">
-
-    <Grid ColumnDefinitions="*,*"
-          ColumnSpacing="5"
-          RowDefinitions="*,Auto"
-          RowSpacing="0">
-        <RefreshView Grid.ColumnSpan="2"
-                     Command="{Binding GetIslandsCommand}"
-                     IsRefreshing="{Binding IsRefreshing}">
-            <CollectionView BackgroundColor="Transparent"
-                        ItemsSource="{Binding Islands}"
-                        SelectionMode="None">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Island">
-                        <Grid Padding="10">
-                            <Frame HeightRequest="125"
-                               Padding="0"
-                               BorderColor="#DDDDDD"
-                               HasShadow="True"
-                               CornerRadius="10"
-                               IsClippedToBounds="True">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandsViewModel}}, Path=GoToDetailsCommand}"/>
-                                </Frame.GestureRecognizers>
-                                <Grid Padding="0"
-                                  ColumnDefinitions="360">
-                                    <!--Gör så bilderna går ända ut till höger och att texten kommer under-->
-
-                                    <Image Aspect="AspectFill"
-                                   Source="{Binding Image}"
-                                   WidthRequest="375"
-                                   HeightRequest="125"/>
-
-                                    <VerticalStackLayout Grid.Column="1"
-                                                     Padding="10"
-                                                     VerticalOptions="Center">
-                                        <Label Text="{Binding Name}"
-                                           FontSize="20"
-                                           TextColor="White"
-                                           HorizontalTextAlignment="Center"
-                                           FontAttributes="Bold"/>
-                                        <Label Text="{Binding Location}"
-                                           FontSize="16"
-                                           HorizontalTextAlignment="Center"
-                                           FontAttributes="Bold"
-                                           TextColor="White"/>
-                                    </VerticalStackLayout>
-                                </Grid>
-                            </Frame>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </RefreshView>
-
-
-        <Button Text="Get Islands"
-                Command="{Binding GetIslandsCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Margin="8"
-                CornerRadius="20"
-                BorderWidth="2"
-                HeightRequest="40"/>
-
-        <Button Text="Find closest"
-                Command="{Binding GetClosestIslandCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Grid.Column="1"
-                Margin="8"
-                CornerRadius="20"
-                BorderWidth="2"
-                HeightRequest="40"/>
-
-        <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="Greece.View.MainPage"
+             Title="">
+    <ContentPage.Resources>
+        <x:String x:Key="info">&#xf05a;</x:String>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Grid Padding="10"> <!---TODO fixa alla sidor för denna samt navigering-->
+            <Frame HeightRequest="125"
+                   Padding="0"
+                   BorderColor="#DDDDDD"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   IsClippedToBounds="True">
+                <Grid Padding="0"
+                      ColumnDefinitions="360">
+                    <Image Aspect="AspectFill"
+                           Grid.ColumnSpan="3"
+                           HeightRequest="125"
+                           WidthRequest="385"
                            HorizontalOptions="FillAndExpand"
-                           VerticalOptions="CenterAndExpand"
-                           Grid.RowSpan="2"
-                           Grid.ColumnSpan="2"/>
+                           Source="Images/greek_flag.svg">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ButtonToIslandGroup"
+                                                  NumberOfTapsRequired="1">
 
-    </Grid>
+                            </TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <VerticalStackLayout Grid.Column="1"
+                                         Padding="10"
+                                         VerticalOptions="Center">
+                        <Label Text="Fakta om Grekland"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold">
+                            <Label.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="4,4"
+                                        Radius="15"
+                                        Opacity="1"/>
+                            </Label.Shadow>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+        <Grid Padding="10">
+            <Frame HeightRequest="125"
+                   Padding="0"
+                   BorderColor="#DDDDDD"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   IsClippedToBounds="True">
+                <Grid Padding="0"
+                      ColumnDefinitions="360">
 
+                    <Image Aspect="AspectFill"
+                           HeightRequest="125"
+                           WidthRequest="385"
+                           HorizontalOptions="FillAndExpand"
+                           Source="Images/greek_islandgroups.jpeg">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ButtonToIslandGroup"
+                                                  NumberOfTapsRequired="1"/>
+
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                         Padding="10"
+                                         VerticalOptions="Center">
+
+                        <Label Text="Grekiska övärlden"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalTextAlignment="Center"
+                               BackgroundColor="Transparent"
+                               FontAttributes="Bold">
+                            <Label.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="4,4"
+                                        Radius="15"
+                                        Opacity="1"/>
+                            </Label.Shadow>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+        <Grid Padding="10"> <!--TODO fixa alla sidor för denna samt navigering-->
+            <Frame HeightRequest="125"
+                   Padding="0"
+                   BorderColor="#DDDDDD"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   IsClippedToBounds="True">
+                <Grid Padding="0"
+                      ColumnDefinitions="360">
+                    <Image Aspect="AspectFill"
+                           Grid.ColumnSpan="3"
+                           HeightRequest="125"
+                           WidthRequest="385"
+                           HorizontalOptions="FillAndExpand"
+                           Source="Images/suitcase.svg">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ButtonToIslandGroup"
+                                                  NumberOfTapsRequired="1">
+
+                            </TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <VerticalStackLayout Grid.Column="1"
+                                         Padding="10"
+                                         VerticalOptions="Center">
+                        <Label Text="Allt du behöver veta innan semestern!"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold">
+                            <Label.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="4,4"
+                                        Radius="20"
+                                        Opacity="1"/>
+                            </Label.Shadow>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+        <Grid ColumnDefinitions="*,*"
+              Padding="0">
+
+            <Frame Margin="10"
+                   Padding="0"
+                   HeightRequest="200"
+                   Grid.Column="0"
+                   BorderColor="#DDDDDD"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   IsClippedToBounds="True">
+                <Grid Padding="0">
+                    <Image Aspect="AspectFill"
+                           HeightRequest="200"
+                           HorizontalOptions="FillAndExpand"
+                           Source="Images/greek_mainland.svg">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ButtonToIslandGroup"
+                                                  NumberOfTapsRequired="1">
+
+                            </TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <VerticalStackLayout Grid.Column="0"
+                                         Padding="10"
+                                         VerticalOptions="Center">
+                        <Label Text="Grekiska fastlandet"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold">
+                            <Label.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="4,4"
+                                        Radius="20"
+                                        Opacity="1"/>
+                            </Label.Shadow>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="200"
+                   Margin="10"
+                   Grid.Column="1"
+                   Padding="0"
+                   BorderColor="#DDDDDD"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   IsClippedToBounds="True">
+                <Grid Padding="0">
+                    <Image Aspect="AspectFill"
+                           HeightRequest="200"
+                           HorizontalOptions="FillAndExpand"
+                           WidthRequest="275"
+                           Source="Images/learn_greek.svg">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ButtonToIslands"
+                                                  NumberOfTapsRequired="1">
+
+                            </TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <VerticalStackLayout Grid.Column="1"
+                                         Padding="10"
+                                         VerticalOptions="Center">
+                        <Label Text="Enkla grekiska fraser"
+                               FontSize="20"
+                               TextColor="White"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold">
+                            <Label.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="4,4"
+                                        Radius="20"
+                                        Opacity="1"/>
+                            </Label.Shadow>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+            
+        </Grid>
+
+    </VerticalStackLayout>
 </ContentPage>

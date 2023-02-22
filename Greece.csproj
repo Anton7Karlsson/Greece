@@ -49,6 +49,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\greeceflagicon.svg" />
+	  <None Remove="Resources\Fonts\Brands-Regular-400.otf" />
+	  <None Remove="Resources\Fonts\Free-Regular-400.otf" />
+	  <None Remove="Resources\Fonts\Free-Solid-900.otf" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -57,11 +60,24 @@
 
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 	  <PackageReference Include="System.Text.Json" Version="7.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="View\IslandsPage.xaml.cs">
+	    <DependentUpon>IslandsPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="View\DetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\IslandGroupsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

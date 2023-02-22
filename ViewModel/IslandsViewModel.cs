@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Greece.Services;
 using Greece.View;
+using Microsoft.Maui.Devices.Sensors;
 
 namespace Greece.ViewModel
 {
@@ -36,7 +37,7 @@ namespace Greece.ViewModel
             try
             {
                 var location = await geolocation.GetLastKnownLocationAsync();
-                if(location is null)
+                if (location is null)
                 {
                     location = await geolocation.GetLocationAsync(
                         new GeolocationRequest
@@ -49,22 +50,24 @@ namespace Greece.ViewModel
                 if (location is null)
                     return;
 
-                var first = Islands.OrderBy(m => 
+                var first = Islands.OrderBy(m =>
                     location.CalculateDistance(m.Latitude, m.Longitude, DistanceUnits.Kilometers)).FirstOrDefault();
 
                 if (first is null)
                     return;
 
                 await Shell.Current.DisplayAlert("Closest Island",
-                    $"{first.Name} in {first.Location}", "OK");
+                    $"{first.Name} in {first.IslandGroup}", "OK");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex);
                 await Shell.Current.DisplayAlert("Error!",
                     $"Unable to get closest island: {ex.Message}", "OK");
             }
         }
+
+
         [RelayCommand]
         async Task GoToDetailsAsync(Island island)
         {
@@ -96,14 +99,16 @@ namespace Greece.ViewModel
 
                 IsBusy= true;
                 var islands = await islandService.GetIslands();
-
+                
                 if (Islands.Count != 0)
                     Islands.Clear();
 
-                foreach(var island in islands)
-                    Islands.Add(island);
+                foreach (var island in islands)
+                {
+                    islands.Add(island);
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex);
                 await Shell.Current.DisplayAlert("Error!",
