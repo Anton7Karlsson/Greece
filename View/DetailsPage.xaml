@@ -8,16 +8,39 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Grid ColumnDefinitions="*,Auto,*"
-                  RowDefinitions="160, Auto">
-
-                <Image Aspect="AspectFill"
-                           Grid.ColumnSpan="3"
-                           HeightRequest="160"
-                           HorizontalOptions="FillAndExpand"
-                           Source="{Binding Island.Image}"/>
-
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="*, Auto"
+                  RowSpacing="0">
+                <CarouselView Grid.ColumnSpan="2"
+                              Loop="False"
+                              ItemsSource="{Binding Island.ImageGallery}"
+                              VerticalOptions="Start"
+                              HeightRequest="300"
+                              HorizontalScrollBarVisibility="Default">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Grid Padding="0"
+                                      ColumnDefinitions="360">
+                                    <StackLayout>
+                                        <Image Source="{Binding}"
+                                                   Aspect="AspectFill"
+                                                   HeightRequest="300"
+                                                   WidthRequest="450"
+                                                   HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <!--<Image Aspect="AspectFill"
+                       Grid.ColumnSpan="3"
+                       HeightRequest="160"
+                       HorizontalOptions="FillAndExpand"
+                       Source="{Binding Island.Image}"/>-->
             </Grid>
+
 
             <Button Text="Show on Map"
                     Command="{Binding OpenMapCommand}"
@@ -30,14 +53,20 @@
                     BorderWidth="2"/>
 
             <VerticalStackLayout Padding="10" Spacing="10">
-                <Label Text="{Binding Island.IslandGroup, StringFormat='Ögrupp: {0}'}"
-                       FontSize="16"/>
-                
+
                 <Label Text="{Binding Island.Population, StringFormat='Population: {0}'}"
-                       FontSize="16"/>
-                <Frame>
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="{Binding Island.IslandGroup, StringFormat='Ögrupp: {0}'}"
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"/>
+                <Frame BackgroundColor="LightBlue"
+                       BorderColor="LightBlue"
+                       HasShadow="True">
+                    <!--Ändra denna så det ser snyggare ut-->
                     <Label Text="{Binding Island.Details}"
                        FontSize="20"/>
+                
                 </Frame>
             </VerticalStackLayout>
 

@@ -11,7 +11,7 @@ namespace Greece.Model
         public string Group { get; set; }
         public string GroupImage { get; set; }
         public string About { get; set; }
-        //public List<Island> Islands { get; set; }
+        public List<Island> Islands { get; set; }
     }
 
    

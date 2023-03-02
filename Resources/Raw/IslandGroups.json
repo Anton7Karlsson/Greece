@@ -9,7 +9,7 @@
 				"IslandGroup": "Saroniska öarna",
 				"Details": "Agistri är en grekisk ö som ligger i Saroniska bukten mellan Aten och Peloponnesoshalvön.",
 				"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_514913230_argosaronic-agistri_1750x680.jpg",
-				"ImageGallery": [],
+				"ImageGallery": ["https://www.greeka.com/photos/saronic/agistri/hero/agistri-2-1920.jpg", "https://i0.wp.com/limitlesstravelling.com/wp-content/uploads/2018/10/Agistri-Island-800x534.jpg?resize=800%2C534", "https://www.kalimera.se/grekland/agistri/bilder/mariza-beach-agistri.jpg", "https://offbeatgreece.com/wp-content/uploads/2021/03/agistri-restaurant-flowers-1024x684.jpg", "https://x-yachting.com/wp-content/uploads/2021/04/Agistri-beach-Aponisos-scaled.jpg"],
 				"Population": 1000,
 				"Latitude": 37.709358,
 				"Longitude": 23.346671

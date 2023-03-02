@@ -3,6 +3,5 @@
 -	I MainPage.xaml så vill jag ändra i grid så att bilderna på Islands fyller hela kortet från höger till vänster
 		och att texten ska hamna under för att få det att se snyggare ut.
 
--	Lägg till en TabBar längst ner för att navigera sig igenom sidan.
-
--	I DetailsPage.xaml flytta bilden till BoxView iställer för cirkel o ta bort cirkeln.
+- För tillfället så kommer man inte alltid till startsidan när man tycker på home, utan den tar en till den sidan man senast
+  var inne på när man har navigerat via bilderna

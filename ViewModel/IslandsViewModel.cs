@@ -12,7 +12,7 @@ namespace Greece.ViewModel
     public partial class IslandsViewModel : BaseViewModel
     {
         IslandService islandService;
-        public ObservableCollection<Island> Islands { get; } = new();
+        public ObservableCollection<Island> Islands { get; set; } = new();
 
         IConnectivity connectivity;
         IGeolocation geolocation;
@@ -82,7 +82,7 @@ namespace Greece.ViewModel
         }
 
         [RelayCommand]
-        async Task GetIslandsAsync()
+        async Task GetIslandsAsync() // Kraschar när man uppdaterar och det redan finns öar
         {
 
             if (IsBusy) return;
@@ -98,14 +98,15 @@ namespace Greece.ViewModel
                 }
 
                 IsBusy= true;
+
                 var islands = await islandService.GetIslands();
-                
+
                 if (Islands.Count != 0)
                     Islands.Clear();
 
                 foreach (var island in islands)
                 {
-                    islands.Add(island);
+                    Islands.Add(island);
                 }
             }
             catch (Exception ex)
