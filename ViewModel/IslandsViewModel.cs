@@ -28,44 +28,44 @@ namespace Greece.ViewModel
         [ObservableProperty]
         bool isRefreshing;
 
-        [RelayCommand]
-        async Task GetClosestIslandAsync()
-        {
-            if (IsBusy || Islands.Count == 0)
-                return;
+        //[RelayCommand]
+        //async Task GetClosestIslandAsync()
+        //{
+        //    if (IsBusy || Islands.Count == 0)
+        //        return;
 
-            try
-            {
-                var location = await geolocation.GetLastKnownLocationAsync();
-                if (location is null)
-                {
-                    location = await geolocation.GetLocationAsync(
-                        new GeolocationRequest
-                        {
-                            DesiredAccuracy = GeolocationAccuracy.Medium,
-                            Timeout = TimeSpan.FromSeconds(30),
-                        });
-                }
+        //    try
+        //    {
+        //        var location = await geolocation.GetLastKnownLocationAsync();
+        //        if (location is null)
+        //        {
+        //            location = await geolocation.GetLocationAsync(
+        //                new GeolocationRequest
+        //                {
+        //                    DesiredAccuracy = GeolocationAccuracy.Medium,
+        //                    Timeout = TimeSpan.FromSeconds(30),
+        //                });
+        //        }
 
-                if (location is null)
-                    return;
+        //        if (location is null)
+        //            return;
 
-                var first = Islands.OrderBy(m =>
-                    location.CalculateDistance(m.Latitude, m.Longitude, DistanceUnits.Kilometers)).FirstOrDefault();
+        //        var first = Islands.OrderBy(m =>
+        //            location.CalculateDistance(m.Latitude, m.Longitude, DistanceUnits.Kilometers)).FirstOrDefault();
 
-                if (first is null)
-                    return;
+        //        if (first is null)
+        //            return;
 
-                await Shell.Current.DisplayAlert("Closest Island",
-                    $"{first.Name} in {first.IslandGroup}", "OK");
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-                await Shell.Current.DisplayAlert("Error!",
-                    $"Unable to get closest island: {ex.Message}", "OK");
-            }
-        }
+        //        await Shell.Current.DisplayAlert("Closest Island",
+        //            $"{first.Name} in {first.IslandGroup}", "OK");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine(ex);
+        //        await Shell.Current.DisplayAlert("Error!",
+        //            $"Unable to get closest island: {ex.Message}", "OK");
+        //    }
+        //}
 
 
         [RelayCommand]
@@ -73,7 +73,7 @@ namespace Greece.ViewModel
         {
             if (island is null)
                 return;
-
+            
             await Shell.Current.GoToAsync($"{nameof(DetailsPage)}", true,
                 new Dictionary<string, object>
                 {

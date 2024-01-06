@@ -4,14 +4,11 @@
              xmlns:model="clr-namespace:Greece.Model" 
              xmlns:viewmodel="clr-namespace:Greece.ViewModel"
              x:DataType="viewmodel:IslandGroupsViewModel"
-             x:Class="Greece.View.IslandGroupsPage"
+             x:Class="Greece.IslandGroupsPage"
              Title="{Binding Title}">
-
-
-    <ContentPage.Resources>
+    <!--<ContentPage.Resources>
         <x:String x:Key="info">&#xf05a;</x:String>
-    </ContentPage.Resources>
-
+    </ContentPage.Resources>-->
     <Grid ColumnDefinitions="*,*"
           ColumnSpacing="5"
           RowDefinitions="*,Auto"
@@ -21,14 +18,12 @@
                      Command="{Binding GetIslandGroupsCommand}"
                      IsRefreshing="{Binding IsRefreshing}">
             <CollectionView BackgroundColor="Transparent"
-                            
                         ItemsSource="{Binding IslandGroups}"
                         SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:IslandGroup">
                         <Grid Padding="10">
-
-                            <Frame HeightRequest="125"
+                            <Frame HeightRequest="200"
                                Padding="0"
                                BorderColor="#DDDDDD"
                                HasShadow="True"
@@ -36,7 +31,7 @@
                                IsClippedToBounds="True">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandsViewModel}}, Path=GetAllIslandsCommand}" />
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandGroupsViewModel}}, Path=GoToGroupDetailsCommand}"/>
                                 </Frame.GestureRecognizers>
                                 <Grid Padding="0"
                                   ColumnDefinitions="360">
@@ -44,7 +39,7 @@
                                     <Image Aspect="AspectFill"
                                            Source="{Binding GroupImage}"
                                            WidthRequest="375"
-                                           HeightRequest="125"/>
+                                           HeightRequest="200"/>
 
                                     <VerticalStackLayout Grid.Column="1"
                                                          Padding="10"
@@ -62,7 +57,7 @@
                                                         Opacity="1"/>
                                             </Label.Shadow>
                                         </Label>
-                                        <Image>
+                                        <!--<Image Margin="150, 0, 150, 0">
                                             <Image.Source>
                                                 <FontImageSource Glyph="&#xf05a;"
                                                                  FontFamily="Free-Solid-900.otf"
@@ -72,7 +67,7 @@
                                                 <TapGestureRecognizer CommandParameter="{Binding .}"
                                                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandGroupsViewModel}}, Path=GetIslandGroupInfoCommand}"/>
                                             </Image.GestureRecognizers>
-                                        </Image>
+                                        </Image>-->
                                         <!--<Label FontFamily="FAS"
                                                    Text="{StaticResource info}"
                                                    TextColor="White"

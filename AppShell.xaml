@@ -5,14 +5,49 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Greece.View"
     xmlns:view="clr-namespace:Greece"
-    Title="Greece">
-
+    Title="Greece"
+    FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="#0080FF">
+    
     <!--<ShellContent
         Title="Greece"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />-->
-    
-    <TabBar>
+    <ShellContent
+        Title="Home"
+        Icon="house_solid_white.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"/>
+    <ShellContent
+        Title="Islands"
+        Icon="umbrella_beach_solid_white.png"
+        ContentTemplate="{DataTemplate view:IslandsPage}"/>
+    <ShellContent
+        Title="Island groups"
+        Icon="layer_group_solid_white.png"
+        ContentTemplate="{DataTemplate view:IslandGroupsPage}"/>
+    <!--Kommer ändra template-->
+    <ShellContent
+        Title="Greek Food"
+        Icon="utensils_solid_white.png"
+        ContentTemplate="{DataTemplate view:IslandGroupsPage}"/>
+    <!--Kommer ändra template-->
+    <ShellContent
+        Title="History"
+        Icon="landmark_solid_white.png"
+        ContentTemplate="{DataTemplate view:IslandGroupsPage}"/>
+    <!--Kommer ändra template-->
+    <ShellContent
+        Title="Before you leave"
+        Icon="person_walking_luggage_solid_white.png"
+        ContentTemplate="{DataTemplate view:IslandGroupsPage}"/>
+    <!--Kommer ändra template-->
+    <ShellContent
+        Title="Good To Know"
+        Icon="lightbulb_solid_white.png"
+        ContentTemplate="{DataTemplate view:IslandGroupsPage}"/>
+
+    <!--<TabBar>
         <Tab Title="Home"
              Icon="house_solid.png">
        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
@@ -25,7 +60,27 @@
              Icon="layer_group_solid.png">
         <ShellContent Title="IslandGroups"  ContentTemplate="{DataTemplate local:IslandGroupsPage}"/>
         </Tab>
-    </TabBar>
+        <Tab Title="Food"
+              Icon="layer_group_solid.png">
+            --><!--Detta nedanför kommer att ändras--><!--
+            <ShellContent Title="Food" ContentTemplate="{DataTemplate local:IslandGroupsPage}"/>
+        </Tab>
+        <Tab Title="History"
+              Icon="layer_group_solid.png">
+            --><!--Detta nedanför kommer att ändras--><!--
+            <ShellContent Title="History" ContentTemplate="{DataTemplate local:IslandGroupsPage}"/>
+        </Tab>
+        <Tab Title="Before you leave"
+              Icon="layer_group_solid.png">
+            --><!--Detta nedanför kommer att ändras--><!--
+            <ShellContent Title="Before you leave" ContentTemplate="{DataTemplate local:IslandGroupsPage}"/>
+        </Tab>
+        <Tab Title="Tips and Tricks"
+              Icon="layer_group_solid.png">
+            --><!--Detta nedanför kommer att ändras--><!--
+            <ShellContent Title="Tips and Tricks" ContentTemplate="{DataTemplate local:IslandGroupsPage}"/>
+        </Tab>
+    </TabBar>-->
 </Shell>
  
     

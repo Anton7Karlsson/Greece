@@ -1,5 +1,7 @@
 ﻿using Greece.Services;
 using Greece.View;
+using Microsoft.Maui.Handlers;
+using Microsoft.Maui.Platform;
 
 namespace Greece;
 
@@ -16,9 +18,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 
 				fonts.AddFont("Brands-Regular-400.otf", "FAB");
-                fonts.AddFont("Free-Regular-400.otf", "FAR");
-                fonts.AddFont("Free-Solid-900.otf", "FAS");
-            });
+				fonts.AddFont("Free-Regular-400.otf", "FAR");
+				fonts.AddFont("Free-Solid-900.otf", "FAS");
+			});
+
+
 
 		builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
 		builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
@@ -30,9 +34,11 @@ public static class MauiProgram
 		builder.Services.AddSingleton<IslandsViewModel>();
 		builder.Services.AddTransient<IslandsDetailsViewModel>();
 		builder.Services.AddSingleton<IslandGroupsViewModel>();
+		builder.Services.AddTransient<GroupDetailsViewModel>();
 
 		builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<IslandGroupsPage>();
+		builder.Services.AddTransient<GroupDetailsPage>();
 		builder.Services.AddSingleton<IslandsPage>();
 		builder.Services.AddTransient<DetailsPage>();
 

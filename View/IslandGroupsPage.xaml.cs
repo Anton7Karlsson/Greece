@@ -1,4 +1,4 @@
-namespace Greece.View;
+namespace Greece;
 
 public partial class IslandGroupsPage : ContentPage
 {
@@ -7,7 +7,4 @@ public partial class IslandGroupsPage : ContentPage
 		InitializeComponent();
         BindingContext = viewModel;
     }
-
-
-    
 }

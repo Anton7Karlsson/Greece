@@ -5,7 +5,6 @@
              xmlns:viewmodel="clr-namespace:Greece.ViewModel"
              x:DataType="viewmodel:IslandsDetailsViewModel"
              Title="{Binding Island.Name}">
-
     <ScrollView>
         <VerticalStackLayout>
             <Grid ColumnDefinitions="*,*"

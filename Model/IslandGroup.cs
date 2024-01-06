@@ -13,6 +13,4 @@ namespace Greece.Model
         public string About { get; set; }
         public List<Island> Islands { get; set; }
     }
-
-   
 }

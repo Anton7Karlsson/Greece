@@ -11,8 +11,9 @@ namespace Greece.ViewModel
     public partial class IslandGroupsViewModel : BaseViewModel
     {
         IslandGroupService islandGroupService;
-
-        public ObservableCollection<IslandGroup> IslandGroups { get; } = new();
+        IslandService islandService;
+        public ObservableCollection<IslandGroup> IslandGroups { get;} = new();
+        public ObservableCollection<Island> Islands { get; set; } = new();
 
         IConnectivity connectivity;
 
@@ -25,6 +26,20 @@ namespace Greece.ViewModel
 
         [ObservableProperty]
         bool isRefreshing;
+
+        [RelayCommand]
+        async Task GoToDetailsAsync(Island island)
+        {
+            if (island is null)
+                return;
+
+            await Shell.Current.GoToAsync($"{nameof(DetailsPage)}", true,
+                new Dictionary<string, object>
+                {
+                    {"Island", island }
+                });
+        }
+
         [RelayCommand]
         public async Task GetIslandGroupsAsync()
         {
@@ -34,7 +49,6 @@ namespace Greece.ViewModel
             {
                 if (connectivity.NetworkAccess != NetworkAccess.Internet)
                 {
-
                     await Shell.Current.DisplayAlert("Internet issue!",
                         $"Check your internet connection and try again!", "OK");
                     return;
@@ -62,32 +76,17 @@ namespace Greece.ViewModel
             }
         }
 
-
-        //[RelayCommand] // Hämta alla öar när man trycker på den knappen
-        //async Task GetAllIslandsAsync()
-        //{
-           
-        //}
-
-        //[RelayCommand] // Hämta rätt öar för rätt ögrupp
-        //async Task GetIslandsInIslandGroupAsync()
-        //{
-
-        //}
-
         [RelayCommand]
-        async Task GetIslandGroupInfoAsync(IslandGroup islandGroups)
+        async Task GoToGroupDetailsAsync(IslandGroup islandGroup)
         {
-            //var islandGroups = await islandGroupService.GetIslandGroups();
-            //if (islandGroups.Count != 0)
-            //    IslandGroups.Clear();
-
-            //foreach (var islandGroup in islandGroups)
-            //    IslandGroups.Add(islandGroup);
-            if (islandGroups is null)
+            if (islandGroup is null)
                 return;
-
-            await Shell.Current.DisplayAlert($"{islandGroups.Group}", $"{islandGroups.About}" , "Stäng");
+            
+                await Shell.Current.GoToAsync($"{nameof(GroupDetailsPage)}", true,
+                new Dictionary<string, object>
+                {
+                    {"IslandGroup", islandGroup}
+                });
         }
 
     }

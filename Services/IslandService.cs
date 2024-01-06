@@ -24,12 +24,12 @@ namespace Greece.Services
 
             //var response = await httpClient.GetAsync(url);
 
-            var stream = await FileSystem.OpenAppPackageFileAsync("IslandGroups.json");
+            var stream = await FileSystem.OpenAppPackageFileAsync("Islands.json");
             var reader = new StreamReader(stream);
             var contents = await reader.ReadToEndAsync();
-            var islandList = JsonSerializer.Deserialize<List<IslandGroup>>(contents);
+            var islandList = JsonSerializer.Deserialize<List<Island>>(contents);
           
-            var result = islandList.SelectMany(o => o.Islands).ToList();
+            var result = islandList.ToList();
 
             return result;
         }

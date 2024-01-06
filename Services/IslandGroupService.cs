@@ -1,9 +1,12 @@
 ﻿using System;
+using Greece.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Json;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace Greece.Services
 {
@@ -15,17 +18,19 @@ namespace Greece.Services
             httpClient = new HttpClient();
         }
 
-        List<IslandGroup> islandGroupList = new();
+        //List<IslandGroup> islandGroupList = new();
         public async Task<List<IslandGroup>> GetIslandGroups()
         {
-            if (islandGroupList?.Count > 0) return islandGroupList;
+            //if (islandGroupList?.Count > 0) return islandGroupList;
 
-            using var stream = await FileSystem.OpenAppPackageFileAsync("IslandGroups.json");
-            using var reader = new StreamReader(stream);
+            var stream = await FileSystem.OpenAppPackageFileAsync("IslandGroups.json");
+            var reader = new StreamReader(stream);
             var contents = await reader.ReadToEndAsync();
-            islandGroupList = JsonSerializer.Deserialize<List<IslandGroup>>(contents);
+            var islandGroupList = JsonSerializer.Deserialize<List<IslandGroup>>(contents);
 
-            return islandGroupList;
+            var result = islandGroupList.ToList();
+
+            return result;
         }
 
     }

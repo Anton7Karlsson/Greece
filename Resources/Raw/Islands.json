@@ -4,7 +4,7 @@
 		"IslandGroup": "Saroniska öarna",
 		"Details": "Agistri är en grekisk ö som ligger i Saroniska bukten mellan Aten och Peloponnesoshalvön.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_514913230_argosaronic-agistri_1750x680.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_514913230_argosaronic-agistri_1750x680.jpg", "https://pipr.sistaminuten.se/rg/p/http://storage.googleapis.com/rg-wp-assets/2018/03/3d/82/60/5d/fb/35/bb/f4/Agistri-768x300.jpg","https://gogreece.dk/wp-content/uploads/2021/02/agistri-kyst-1140x500.jpg","https://weloveagistri.com/wp-content/uploads/2022/01/Skala-Agistri-photo-by-@artem7695-scaled.jpeg","https://x-yachting.com/wp-content/uploads/2021/04/Agistri-beach-Aponisos-scaled.jpg"],
 		"Population": 1000,
 		"Latitude": 37.709358,
 		"Longitude": 23.346671
@@ -14,7 +14,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Amorgos är en avlång ö med stundtals branta klippor och mjuka stränder.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_171296073_amorgos-agannabeach_1310x769.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_171296073_amorgos-agannabeach_1310x769.jpg","https://www.mysteriousgreece.com/wp-content/uploads/2014/10/AmorgosAlleys_shutterstock_95398654.jpg","https://i.guim.co.uk/img/media/4ffc26673981ef6944868f4323b6a3d3d889fea6/0_77_3543_2126/master/3543.jpg?width=700&quality=85&auto=format&fit=max&s=40f0e022dc1893fbaae6be6f96e7787d","https://media.istockphoto.com/id/627799494/sv/foto/luxury-greek-holidays-amorgos-island.jpg?s=612x612&w=0&k=20&c=EfjtR36sQBYzgdzdVteM5fy-eT7enR_b8l0d8EQN4tg=","https://www.cruisemapper.com/images/ports/2798-large-121b6dd5ae9baf129beb72605c10ad00.jpg"],
 		"Population": 1800,
 		"Latitude": 36.840018,
 		"Longitude": 25.887664
@@ -24,7 +24,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Anafi är en grekisk ö bland Kykladerna, öster om Santorini, ön är drygt 40km² stor.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1138199974_anafi_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_1138199974_anafi_1743x752.webp", "https://www.discovergreece.com/sites/default/files/styles/hd_half/public/2019-11/1_street_in_chora_on_anafi_island_edit-1.jpg","https://volare.volotea.com/wp-content/uploads/2022/09/kalamos-anafi.jpg","https://cf.bstatic.com/xdata/images/hotel/max500/296774555.jpg?k=86c1d864ec74bcb3749e93451992850f0e9993d420a6af393958d1031d3f445d&o="],
 		"Population": 270,
 		"Latitude": 36.373444,
 		"Longitude": 25.7773
@@ -34,7 +34,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Andros är den nordligaste ön i Kykladerna. Dess yta är bergig, med många blomstrande dalar.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1286491078_andros-chora_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_1286491078_andros-chora_1743x752.webp","https://www.greektravel.com/greekislands/andros/andros-batsi.jpg","https://www.androssecrets.com/images/0/0/batsi.jpg","https://andros.gr/images/slider/slid04_v2.jpg","https://camarasuitesandros.com/wp-content/uploads/2021/01/andros-by-night.jpg"],
 		"Population": 9000,
 		"Latitude": 37.838147,
 		"Longitude": 24.938594
@@ -44,7 +44,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Ön ligger väster om Paros, skild från denna av ett smalt sund, och har en del mycket långgrunda stränder. På sydvästra kusten finns en god hamn.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_550081510_antiparos_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_550081510_antiparos_1743x752.webp","https://www.taytarealestate.com/wp-content/uploads/2021/09/Antiparos-pagina-interna-al-posto-della-barca--scaled.jpg","https://bilder.apollo.se/antiparos-1639145045-156985-ImageGalleryX2.jpg","https://www.placesofjuma.com/wp-content/uploads/2022/11/Antiparos-Hotels-1-scaled.jpg","https://coveteur.com/media-library/antiparos-greek-island-city-guide.jpg?id=25309444&width=1200&height=600&coordinates=0%2C62%2C0%2C63"],
 		"Population": 1000,
 		"Latitude": 37.040483,
 		"Longitude": 25.083154
@@ -54,7 +54,7 @@
 		"IslandGroup": "Joniska öarna",
 		"Details": "Antipaxos är en ö söder om Paxos, ön är känd för sina spektakulära stränder",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_653285293_antipaxoi-voutoumi_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_653285293_antipaxoi-voutoumi_1743x752.webp", "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/59/8f.jpg","https://www.gtp.gr/MGfiles/location/image28567[2537].jpg","https://visit.corfu.gr/web-assets/uploads/2021/10/Gaios_Paxos_Island_Greech_Ionian_Sea_Pool_Villas_2.jpeg"],
 		"Population": 30,
 		"Latitude": 39.149011,
 		"Longitude": 20.232586
@@ -64,7 +64,7 @@
 		"IslandGroup": "Dodekaneserna",
 		"Details": "Astypalaia är egentligen två öar förenade av en smal landtunga.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/merakos_02_astypalea-chora_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/merakos_02_astypalea-chora_1743x752.webp","https://aegeanseavillas.com/wp-content/uploads/2017/02/Astypalaia_Greece_6-5.jpg","https://media.istockphoto.com/id/697218562/sv/foto/astypalaia-chora-tolv%C3%B6arna-%C3%B6n.jpg?s=612x612&w=0&k=20&c=71BRa4HegX2VCZrEFc_B5lyzJ-V0xMukZATafNnq_rE=","https://www.melograno.gr/wp-content/uploads/sites/275/2018/03/astypalaia-island-1024x686.jpg"],
 		"Population": 3000,
 		"Latitude": 36.538981,
 		"Longitude": 26.313136
@@ -74,7 +74,7 @@
 		"IslandGroup": "Dodekaneserna",
 		"Details": "Chalki är en mindre grekisk ö väster om Rhodos och är den minsta bebodda ön i Dodekaneserna.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1140596834_chalki_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_1140596834_chalki_1743x752.webp","https://www.hotelscombined.se/rimg/dimg/83/5c/41b79fdb-city-74782-1729226b3d3.jpg?width=1366&height=768&xhint=1582&yhint=1175&crop=true&watermarkposition=lowerright","https://www.ferriesingreece.com/photos/destinations/chalki/chalki-ferries-2880.jpg","https://www.visitgreece.gr/images/1743x752/jpg/files/i_1140596834_chalki_1743x752.jpg","https://i0.wp.com/www.thehungrytravellers.blog/wp-content/uploads/2021/08/8714B65D-A7D2-40F5-948B-7B60531E1A8E.jpeg?resize=960%2C641&ssl=1","https://clean-energy-islands.ec.europa.eu/sites/default/files/styles/node_image/public/2022-07/DJI_0868.jpg?itok=H_ApFGs6","https://i0.wp.com/greklandallexclusive.com/wp-content/uploads/2019/05/shutterstock_319349738.jpg?fit=1000%2C614&ssl=1"],
 		"Population": 330,
 		"Latitude": 36.226965,
 		"Longitude": 27.570283
@@ -84,7 +84,7 @@
 		"IslandGroup": "Nordegeiska öarna",
 		"Details": "Chios är en ö strax utanför Turkiets kust. Ön är berömd för sitt landskap och goda klimat.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/filippini_33_chios-mavravolia_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/filippini_33_chios-mavravolia_1743x752.jpg","https://www.visitgreece.gr/files/merakos_001_chios-mesta_1310x769.jpg","https://lp-cms-production.imgix.net/2019-06/549233897_super.jpg","https://heraguletcharter.com/wp-content/uploads/Chios-Griekenland.jpg"],
 		"Population": 54000,
 		"Latitude": 38.368182,
 		"Longitude": 26.131006
@@ -94,7 +94,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Delos är med sin yta på 5 km² minst bland öarna i Kykladerna, men på grund av sin betydelse under antiken den mest berömda av dom.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_730243063_delos_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_730243063_delos_1743x752.webp","https://www.travel.gr/wp-content/uploads/2022/08/delos-2048x1368.jpg","https://www.e-mykonos.gr/wp-content/uploads/2023/09/delos.jpg","https://www.discovergreece.com/sites/default/files/styles/default/public/migrated/archaeological_finds_on_the_island_of_delos.jpeg","https://images.adsttc.com/media/images/64e5/2ce4/8177/ff72/a9c8/4f7e/large_jpg/capturing-the-essence-of-delos-a-photographic-journey-with-erieta-attali_1.jpg?1692740859"],
 		"Population": 14,
 		"Latitude": 37.396262,
 		"Longitude": 25.268941
@@ -104,7 +104,7 @@
 		"IslandGroup": "Saroniska öarna",
 		"Details": "Egina som även kallas Aegina är en ö i Saroniska öarna och ligger 25km från Aten. Egina har blivit ett omtyckt turistmål, inte minst av atenarna själva.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_477810265_aegina-afaia_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_477810265_aegina-afaia_1743x752.jpg","https://mediaim.expedia.com/destination/1/cab9efa2b5f15a032cf257ed14fd7aea.jpg","https://img.pixers.pics/pho_wat(s3:700/FO/41/55/83/65/700_FO41558365_1d6eb0b873bb3833ef37a9347ed2f3da.jpg,700,467,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,417,jpg)/fototapeter-egina-saroniska-oarna-grekland.jpg.jpg","https://mediaim.expedia.com/destination/1/cab9efa2b5f15a032cf257ed14fd7aea.jpg"],
 		"Population": 12000,
 		"Latitude": 37.740882,
 		"Longitude": 23.501421
@@ -114,7 +114,7 @@
 		"IslandGroup": "Fastlandet",
 		"Details": "Euboia är efter Kreta den näst största ön i den grekiska skärgården. Den åtskiljs från det grekiska fastlandet av Euboiabukten.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_1784476238_evia-chalkida_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_1784476238_evia-chalkida_1743x752.webp","https://media.istockphoto.com/id/478919320/sv/foto/cactuses-and-bay-of-greek-houses-on-coast-greece.jpg?s=612x612&w=0&k=20&c=6a13LVGzPmIyl9XFaqFYx2wyEYU7XrJlxAFcQ2y_JAM=","https://magazin.travelportal.cz/wp-content/uploads/2018/03/Euboea-10.jpg","https://elxis.com/wp-content/uploads/2023/08/shutterstock_1897908265.jpg","https://www.greekboston.com/wp-content/uploads/2021/09/evia-greece-scaled.jpg","https://greekreporter.com/wp-content/uploads/2022/12/chiliadou-beach-evia-credit-discover-greece-tripadvisor.jpg"],
 		"Population": 191206,
 		"Latitude": 38.494172,
 		"Longitude": 23.911084
@@ -124,7 +124,7 @@
 		"IslandGroup": "Kreta",
 		"Details": "Gavdos är en liten ö utanför ön Kreta. Ön är den sydligaste punkten i Europa.",
 		"Image": "https://www.cretetravel.com/modules/hotels/fotografies/guides/South_Crete/35/Gavdos_Island_20.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.cretetravel.com/modules/hotels/fotografies/guides/South_Crete/35/Gavdos_Island_20.jpg","https://www.elissos.com/wp-content/uploads/2022/05/Gavdos-Island.png","https://cdn1.matadornetwork.com/blogs/1/2021/09/gavdos-nude-beach-lede-europes-southernmost-point-1933417730-1200x853.jpg","https://image.jimcdn.com/app/cms/image/transf/none/path/sf4addbe71aad438a/image/i5ab587f74dbc5a3a/version/1654758032/image.jpg"],
 		"Population": 150,
 		"Latitude": 34.846225,
 		"Longitude": 24.084478
@@ -134,7 +134,7 @@
 		"IslandGroup": "Saroniska öarna",
 		"Details": "Hydra är lånsträckt och bergigt, och åtskiljs från Peloponnesos av ett smalt sund. Motorfordon är inte tillåtna på ön.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_476968604_hydra_750x440.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_476968604_hydra_750x440.jpg","https://www.celebritycruises.com/blog/content/uploads/2022/06/hydra-greece-horseback-riding-hero.jpg","https://www.solosophie.com/wp-content/uploads/2023/07/View-of-the-amazing-Hydra-island_2049678176.jpeg.webp","https://sofiaadventures.com/wp-content/uploads/2020/05/shutterstock_685027471-1.jpg","https://www.letohydra.gr/_novaimg/galleria/1481799.jpg"],
 		"Population": 2000,
 		"Latitude": 37.334508,
 		"Longitude": 23.463128
@@ -144,7 +144,7 @@
 		"IslandGroup": "Nordegeiska öarna",
 		"Details": "Ikaria är en ö som tillhör de Nordegeiska öarna, ön har en kustlängd på 102km.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_1299114793_ikaria_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_1299114793_ikaria_1743x752.webp","https://www.greektravel.com/greekislands/ikaria/ikaria-evdilos.jpg","https://lp-cms-production.imgix.net/2023-10/GettyImages-1555269871.jpeg","https://lp-cms-production.imgix.net/2022-03/shutterstockRF_797267950.jpg?auto=format&w=1920&h=640&fit=crop&crop=faces,edges&q=75","https://www.greektravel.com/greekislands/ikaria/evdilos2-ikaria.jpg","https://www.inlovewiththemed.com/mednvk/uploads/2023/06/Exploring-Ikaria-Island-Where-Time-Stands-Still.jpeg"],
 		"Population": 8423,
 		"Latitude": 37.596723,
 		"Longitude": 26.112308
@@ -154,7 +154,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Ios är en ö i Kykladerna som ligger mellan Naxos och Santorini.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_903169004_ios_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_903169004_ios_1743x752.webp","https://i.dailymail.co.uk/1s/2019/05/03/20/13064042-0-image-a-97_1556913486930.jpg","https://i.guim.co.uk/img/media/79b6601cd277b98b21e482a0d8ca050351ed5585/0_134_3872_2324/master/3872.jpg?width=700&quality=85&auto=format&fit=max&s=187c0ca88e0116616b93b131429e0046","https://www.greece-is.com/wp-content/uploads/2016/08/IOS_003.jpg","https://www.enjoy-greece.gr/wp-content/uploads/2023/09/IMG_8511.jpeg"],
 		"Population": 2024,
 		"Latitude": 36.723303,
 		"Longitude": 25.282278
@@ -164,7 +164,7 @@
 		"IslandGroup": "Joniska öarna",
 		"Details": "Ithaka är en ö utanför Greklands västkust, nordöst om den större ön Kefalinia.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_1017594073__ithaka-vathy_port_1310x769.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_1017594073__ithaka-vathy_port_1310x769.jpg","https://mediaim.expedia.com/destination/1/dd6361f0772b4602e5b45e2622335f30.jpg","https://mediaim.expedia.com/destination/1/e305944e32e02286e64105b98ecdd014.jpg","https://kerrymurrayphotography.files.wordpress.com/2017/03/ithaka-9.jpg?w=1200","https://www.ionianislandholidays.com/blog/wp-content/uploads/Gidakhi-Beach-Ithaka.jpg","https://media1.travelguide.de/media/2021/06/Ithaka.jpg"],
 		"Population": 3231,
 		"Latitude": 38.432507,
 		"Longitude": 20.668334
@@ -174,7 +174,7 @@
 		"IslandGroup": "Dodekaneserna",
 		"Details": "Ön är bergig, har flera intressanta grottor och har på senare år blivit ett populärt mål för klättring.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_607447103_kalymnos_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_607447103_kalymnos_1743x752.webp","https://files.reseguiden.se/files/1/rg_25567701_c2400,1240.jpg","https://s3-eu-west-1.amazonaws.com/jet2blog/production/_952x595_crop_center-center_none/KGS_Kalymnos_Island_Grande_Grotta_1148590490_Getty_RGB-136-DPI-For-Web.jpg","https://www.greektravel.com/greekislands/kalymnos/kalymnos002.jpg","https://www.greeceholidays.info/wp-content/uploads/sites/128/kalymnos.jpg","https://kalymnos-love.com/wp-content/uploads/2020/05/charming-pothia-4.jpg","https://chasingthedonkey.b-cdn.net/wp-content/uploads/2022/01/Port-of-Pothia-Kalymnos-Greece_Depositphotos_72602981_S-900x596.jpeg"],
 		"Population": 16000,
 		"Latitude": 36.953309,
 		"Longitude": 26.979813
@@ -184,17 +184,17 @@
 		"IslandGroup": "Dodekaneserna",
 		"Details": "Ön är belägen halvvägs mellan Rhodos och Kreta och är den näst största ön av Dodekaneserna.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_509853762_karpathos_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_509853762_karpathos_1743x752.webp","https://bilder.apollo.se/karpathos-stad-1576226181-412542-ImageGalleryX2.jpg","https://files.reseguiden.se/files/98/rg_25567698_c2400,1240.jpg","https://karpathosinfo.com/wp-content/uploads/karpathos-best-beaches-greece.jpg","https://www.tui.se/tuin-img/2023_3/29_13/dff14127-695e-426f-a44b-afd400de628a/harbour-night-pigadia-karpathos-greece-tui-getty-images-585792835.jpg?crop=edges&fit=crop&w=1080&h=608&fm=jpg&fl=progressive"],
 		"Population": 6000,
 		"Latitude": 35.506869,
 		"Longitude": 27.213067
 	},
 	{
-		"Name": "Kefalinia",
+		"Name": "Kefalonia",
 		"IslandGroup": "Joniska öarna",
 		"Details": "Den största av de Joniska öarna. Ön är belägen mitt emot Patrasviken och skiljs i öster från Ithaka genom det 7km breda Viskardosundet.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_01_kefalonia-assos_1310x769.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_01_kefalonia-assos_1310x769.jpg","https://visitourgreece.com/wp-content/uploads/2021/10/Kefalonia-1-scaled.jpg","https://i.guim.co.uk/img/media/a3cada51454f953a60cae1a257ac963f89906b2c/0_200_6000_3600/master/6000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2eeac939503c38614f57d13fd16f4f06","https://images.musement.com/cover/0003/14/kefalonia-xxl-jpg_header-213793.jpeg","https://media.tacdn.com/media/attractions-splice-spp-674x446/10/7f/39/a8.jpg","https://mediaim.expedia.com/destination/1/66f2da633e3df0ef6cefdc10aefc3c1f.jpg"],
 		"Population": 40000,
 		"Latitude": 38.237934,
 		"Longitude": 20.560883
@@ -204,7 +204,7 @@
 		"IslandGroup": "Joniska öarna",
 		"Details": "Korfu är den nordligaste av de Joniska öarna och ligger utanför Greklands och Albaniens kust.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_635764444_corfu-palaiokastritsa_1310x769.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_635764444_corfu-palaiokastritsa_1310x769.jpg","https://bilder.apollo.se/korfu-1616588594-142987-ImageGalleryX2.jpg","https://cdn.vagabond.se/app/uploads/2021/06/YTo2OntzOjI6ImlkIjtpOjE2MjQ1NDc7czoxOiJ3IjtpOjk4MDtzOjE6ImgiO2k6MzIwMDtzOjE6ImMiO2k6MDtzOjE6InMiO2k6MDtzOjE6ImsiO3M6NDA6IjUyODc2NDExMmQ4NTVkNTU5ZjhmNmQ2NWI1M2QyMGYxMDU0NDZiZTIiO30.jpg","https://images.musement.com/cover/0157/27/thumb_15626049_cover_header.jpg","https://www.swedishnomad.com/wp-content/images/2021/01/Things-to-do-in-Corfu-Greece.jpg","https://files.reseguiden.se/files/65/rg_25424265_c2400,1240.jpg","https://pipr.sistaminuten.se/rg/resized/980x/http://www.sistaminuten.se/guide/hellas/korfu/korfuby/gallery/shutterstock_1250604826.jpg"],
 		"Population": 105000,
 		"Latitude": 39.624262,
 		"Longitude": 19.921678
@@ -214,7 +214,7 @@
 		"IslandGroup": "Dodekaneserna",
 		"Details": "Kos är belägen utanför Turkiets sydvästra kust. Ön räknas som den grönaste och bördigaste av Dodekaneserna.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/skoulas_5243_kos-agiosstefanosbasilica_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/skoulas_5243_kos-agiosstefanosbasilica_1743x752.webp","https://tourscanner.com/blog/wp-content/uploads/2021/03/Things-to-do-in-Kos.png","https://www.dreamyachtcharter.com/wp-content/uploads/2022/07/H_yacht_charter_kos_03.jpg","https://www.greeceholidays.info/wp-content/uploads/sites/128/kos.jpg","https://images.musement.com/cover/0153/57/kos-kos-7-web-jpg_header-15256184.jpg","https://bilder.apollo.se/kos-stad-1572869313-212930-ImageGalleryX2.jpg"],
 		"Population": 30000,
 		"Latitude": 36.891506,
 		"Longitude": 27.287723
@@ -224,7 +224,7 @@
 		"IslandGroup": "Kreta",
 		"Details": "Kreta är den största och folkrikaste av de grekiska öarna och den femte största ön i Medelhavet.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/2/jpg/files/s_1217691214_crete-elafonisi_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/2/jpg/files/s_1217691214_crete-elafonisi_1743x752.jpg","https://files.reseguiden.se/files/83/rg_25425483_c2400,1240.jpg","https://escapeaway.imgix.net/graekenland/kreta/loutro_kreta-1.c19acf4d-78f2-4658-8ec9-4244b2628a2d.jpg","https://upload-prod-www.apollo.se/upload/destinationer/940/Bali-Kreta-940x320.jpg","https://www.allacharterresor.se/uploads/articles/3a20e3cb10bc45b927513ba573472e2b.jpg","https://images.musement.com/cover/0161/76/thumb_16075994_cover_header.jpg","https://www.tui.se/cdn/contentfulimages/kb4x8uh0bui6/1rLZPg7516LiMpb1c3Wgwh/0ccfbfb412d4805ca77b476b30153c35/Chania-TUI.jpg","https://mygatemagazine.se/wp-content/uploads//2018/06/Kreta-1.jpg"],
 		"Population": 650000,
 		"Latitude": 35.240117,
 		"Longitude": 24.809269
@@ -234,7 +234,7 @@
 		"IslandGroup": "Joniska öarna",
 		"Details": "Kythera är en ö söder om Peloponnesos. Under antiken var ön tillägnad kärleksgudinnan Afrodite.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/filippini_46_kythira_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/filippini_46_kythira_1743x752.jpg","https://t3.ftcdn.net/jpg/01/98/63/82/360_F_198638259_VA4b6npBtaRVde2FS0uS2MxVYYl2J4Se.jpg","https://kytherabeachapartments.com/wp-content/uploads/2023/05/8-min.jpg","https://www.thehappinessretreat.gr/sites/thehappinessretreat.gr/files/2019-11/kythera%20kaladi%201.jpg"],
 		"Population": 2500,
 		"Latitude": 36.25,
 		"Longitude": 23
@@ -244,7 +244,7 @@
 		"IslandGroup": "Joniska öarna",
 		"Details": "Lefkas är ansluten med det Grekiska fastlandet genom en lång gångbana och en flytande bro.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_326882015_lefkada-portokatsiki_1310x769.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_326882015_lefkada-portokatsiki_1310x769.jpg","https://bilder.apollo.se/lefkas-1628163838-521455-ImageGalleryX2.jpg","https://files.reseguiden.se/files/97/rg_25567697_c2400,1240.jpg","https://upload-prod-www.apollo.se/upload/inspiration/restips/grekland/lefkas/Sivota-Lefkas-600x400.jpg","https://www.pitter-yachting.com/images/marinas/greece/lefkas-d-marin.jpg","https://olympic-b2gshabbdbbkccc3.z01.azurefd.net/cloudcache/d/6/c/9/7/5/d6c975005cfa63fe4f40508edf3ceda5721a9b79.jpg"],
 		"Population": 21000,
 		"Latitude": 38.706646,
 		"Longitude": 20.64073
@@ -254,7 +254,7 @@
 		"IslandGroup": "Nordegeiska öarna",
 		"Details": "Lemnos är en 476 km² stor ö i Egeiska havet",
 		"Image": "https://www.visitgreece.gr/images/1310x769/2/jpg/files/s_1492691108_lemnos_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/2/jpg/files/s_1492691108_lemnos_1743x752.jpg","https://www.discovergreece.com/sites/default/files/styles/hd_half/public/2019-12/1alt_partial_view_of_the_town_of_myrina_its_castle_and_the_beach_you_of_romeikos_gyalos-1.jpg","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/02/9c/91/lemnos-village-hotel.jpg?w=700&h=-1&s=1","https://images.musement.com/cover/0159/40/lemnos-jpeg_header-15839822.jpg?w=1200&h=630&q=95&fit=crop","https://www.greekgastronomyguide.gr/wp-content/uploads/2018/08/rsz_dsc_2788.jpg","https://assets.airtrfx.com/media-em/gq/cities/lemnos-LXS.jpg"],
 		"Population": 17000,
 		"Latitude": 39.919841,
 		"Longitude": 25.141484
@@ -264,7 +264,7 @@
 		"IslandGroup": "Nordegeiska öarna",
 		"Details": "Lesbos är den tredje största ön i Grekland och den åttonde största i Medelhavet.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1162556431_lesvos_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1162556431_lesvos_1743x752.jpg","https://media.istockphoto.com/id/1162556442/sv/foto/resor-i-lesvos-island-utsikt-%C3%B6ver-vackra-molyvos-stad-b%C3%A4sta-i-grekland.jpg?s=612x612&w=0&k=20&c=Clv09t_5MopQMX2pYZ_kvnwhxIR-DA5Fj6hXj9HSLss=","https://media.istockphoto.com/id/690166376/sv/foto/mytilini-gamla-hamnen-i-lesvos-island.jpg?s=612x612&w=0&k=20&c=iqsdktJKxlFO0fGmj4tqjAe7ZI6GkL_HTzZ18OzUR4I=","https://i.content4travel.com/cms/img/u/kraj/1/lesbos_0.jpg?version=1","https://i.assetzen.net/i/d7qFPsNOQvhC/w:auto/h:400/q:70.jpg","https://media.istockphoto.com/id/1414066007/sv/foto/view-of-mytilene-seaside-port-with-cathedral-of-agios-therapontas-lesvos-island-greece-on.jpg?s=612x612&w=0&k=20&c=3fUxfO3a-KrpfqriH5ivVFIhK6qEvdudfU171CPxb9c=","https://i.assetzen.net/i/2aWEhz1Nt4L7/w:auto/h:400/q:70.jpg"],
 		"Population": 100000,
 		"Latitude": 39.26451,
 		"Longitude": 26.277707
@@ -274,7 +274,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Milos är en ö i sydvästra delen av Egeiska havet.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1225938906_milos-mandrakia_1310x769.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1225938906_milos-mandrakia_1310x769.jpg","https://bilder.apollo.se/milos-1635165359-533406-ImageGalleryX2.jpg","https://bilder.apollo.se/milos-1635165119-533417-ImageGalleryX2.jpg","https://i0.wp.com/elladainfo.com/wp-content/uploads/2022/05/Milos-scaled.jpg","https://mediaim.expedia.com/destination/1/b8390ca0a44a9cfb7292a41a384a4bad.jpg","https://www.travel.gr/wp-content/uploads/2023/02/milos-beach-scaled.jpg"],
 		"Population": 5000,
 		"Latitude": 36.709344,
 		"Longitude": 24.506834
@@ -284,7 +284,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Mykonos är en grekisk ö i Egeiska havet och är ett populärt mål för badturister.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/s_249496996_mykonos_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/s_249496996_mykonos_1743x752.webp","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/81/2d/63/caption.jpg?w=700&h=-1&s=1&cx=1800&cy=1199&chk=v1_4611867f8269144c4d23","https://bilder.apollo.se/mykonos-1638967431-539507-ImageGalleryX2.jpg","https://lp-cms-production.imgix.net/2021-08/shutterstockRF_1541944991.jpg?auto=format&w=1440&h=810&fit=crop&q=75","https://thetourguy.com/wp-content/uploads/2021/11/Where-to-Stay-in-Mykonos-1440-x-675.jpg","https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/mykonos-greece/overview/mykonos-greece-windmills-from-restaurant.jpg?$750x320$"],
 		"Population": 10000,
 		"Latitude": 37.446735,
 		"Longitude": 25.328884
@@ -294,7 +294,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Naxos är den största ön bland Kykladerna. Naxos är en mycket bergig ö med bördiga dalar.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1140594041_naxos-portara_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1140594041_naxos-portara_1743x752.jpg","https://cdn.getyourguide.com/img/location/5a1d4e47a854a.jpeg/99.jpg","https://bilder.apollo.se/naxos-stad-1607622899-513224-ImageGalleryX2.jpg","https://upload-prod-www.apollo.se/upload/inspiration/restips/Naxos/Naxos-Portara-900x600.jpg","https://tourscanner.com/blog/wp-content/uploads/2022/04/Small-Cyclades-tours-from-Naxos.jpg"],
 		"Population": 17000,
 		"Latitude": 37.102103,
 		"Longitude": 25.376114
@@ -304,7 +304,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Paros är bland de största av Kykladerna och består till största delen av ett berg.",
 		"Image": "https://www.visitgreece.gr/images/1310x769/2/jpg/files/merakos_02_paros-naousa_1743x752.jpg",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/2/jpg/files/merakos_02_paros-naousa_1743x752.jpg","https://www.placesofjuma.com/wp-content/uploads/2023/07/Paros-Naoussa-4-scaled.jpg","https://urban-wanders.com/wp-content/uploads/2017/10/DSC_0470-copy-1.jpg","https://www.greecetravelguide.co.uk/wp-content/uploads/2022/08/DJI_0737.jpg","https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/35/41/d6.jpg","https://as2.ftcdn.net/v2/jpg/03/74/64/81/1000_F_374648152_C08nxeBiPGn5jKRN9mT0D6WecpmaqA2t.jpg","https://images.squarespace-cdn.com/content/v1/5de26e373d393a7e06295e22/1609143498827-VIF6DWOZXAL4TYJ4ACDD/adobe1.jpeg?format=2500w"],
 		"Population": 8000,
 		"Latitude": 37.085394,
 		"Longitude": 25.151534
@@ -314,7 +314,7 @@
 		"IslandGroup": "Joniska öarna",
 		"Details": "Paxos är bland de mindre av de Joniska öarna. Jämfört med många andra grekiska öar är Paxos en mycket grön ö med många träd.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/i_635764610_paxoi_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/i_635764610_paxoi_1743x752.webp","https://upload.wikimedia.org/wikipedia/commons/b/b9/GaiosPaxiJuly192022_01.jpg","https://media.tatler.com/photos/6141dd3810040d2e309597cc/16:9/w_2560%2Cc_limit/k4kemr.jpg","https://www.visitpaxos.com/wp-content/uploads/2020/07/logos-beach-paxos-greece.jpg","https://cdn.hometogo.net/assets/media/pics/1200_628/62ce9f9ac55c0.jpg"],
 		"Population": 2000,
 		"Latitude": 39.209854,
 		"Longitude": 20.158128
@@ -324,7 +324,7 @@
 		"IslandGroup": "Dodekaneserna",
 		"Details": "Rhodos är der sydostligaste och största ön av Dodekaneserna. På Rhodos fanns kolossen på Rhodos, ett av världens sju underverk.",
 		"Image": "https://img.ving.se/image/upload/c_scale,w_1280,f_avif,q_auto:eco/images/AreaGeneric/108122_1001_57_131.jpg?v=31",
-		"ImageGallery": [],
+		"ImageGallery": ["https://img.ving.se/image/upload/c_scale,w_1280,f_avif,q_auto:eco/images/AreaGeneric/108122_1001_57_131.jpg?v=31","https://bilder.apollo.se/rhodos-1685553163-116757-ImageGalleryX2.jpg","https://files.reseguiden.se/files/49/rg_42571149_c1200,800.jpg","https://cdn.vagabond.se/app/uploads/2022/01/media-GettyImages-1300951631-1024x684.jpg","https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/85/ae/a3.jpg","https://files.reseguiden.se/files/68/rg_13665468_c2400,1240.jpg"],
 		"Population": 133000,
 		"Latitude": 36.434053,
 		"Longitude": 28.217638
@@ -334,7 +334,7 @@
 		"IslandGroup": "Kykladerna",
 		"Details": "Santorini är ett av Greklands främsta turistmål. Santorini kallades tidigare för Thera.",
 		"Image": "https://www.visitgreece.gr/images/1743x752/jpg/files/merakos_05_santorini-oia_1743x752.webp",
-		"ImageGallery": [],
+		"ImageGallery": ["https://www.visitgreece.gr/images/1743x752/jpg/files/merakos_05_santorini-oia_1743x752.webp","https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75","https://media.cntraveler.com/photos/64e3c25f5820e6923e230a28/1:1/w_2644,h_2644,c_limit/santoriniGettyImages-528893342.jpeg","https://www.santoriniview-hotel.gr/media/0aulzh01/santorini-view-hotel-3.jpg?rxy=0.6353383458646616,0.44006914720321755&width=1700&height=750&rnd=133330432396170000&quality=70"],
 		"Population": 15500,
 		"Latitude": 36.393156,
 		"Longitude": 25.461509
@@ -343,8 +343,8 @@
 		"Name": "Zakynthos",
 		"IslandGroup": "Joniska öarna",
 		"Details": "Zakynthos består av berg klädda med pinje och på sydkusten finns det fina sandstränder.",
-		"Image": "https://www.visitgreece.gr/islands/ionian-islands/zakynthos/",
-		"ImageGallery": [],
+		"Image": "https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_03_zakynthos-navagio_1310x769.jpg",
+		"ImageGallery": ["https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_03_zakynthos-navagio_1310x769.jpg","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f9/57/zakynthos.jpg?w=700&h=500&s=1","https://content.r9cdn.net/rimg/dimg/b1/35/99fba158-city-6896-1657bf0cd2f.jpg?width=1200&height=630&crop=false","https://content.r9cdn.net/rimg/dimg/b1/35/99fba158-city-6896-1679deb2d4c.jpg?width=1750&height=1000&xhint=1614&yhint=1153&crop=true","https://checkyeti.imgix.net/images/optimized/boat-trips-zakynthos_sem-resort-hero.jpg","https://www.brusselsairlines.com/aircore/cache/images/58616/eyJpZGVudGlmaWVyIjoyOTY4LCJ0eXBlIjoiYXNzZXQifQ==.webp"],
 		"Population": 40000,
 		"Latitude": 37.787033,
 		"Longitude": 20.899876

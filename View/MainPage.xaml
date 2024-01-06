@@ -4,12 +4,191 @@
              xmlns:viewmodel="clr-namespace:Greece.ViewModel"
              x:DataType="viewmodel:MainPageViewModel"
              x:Class="Greece.View.MainPage"
-             Title="">
-    <ContentPage.Resources>
-        <x:String x:Key="info">&#xf05a;</x:String>
-    </ContentPage.Resources>
-    <VerticalStackLayout>
-        <Grid Padding="10"> <!---TODO fixa alla sidor för denna samt navigering-->
+             Title="Greece">
+    <ScrollView>
+        <VerticalStackLayout >
+            <!---https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_03_zakynthos-navagio_1310x769.jpg-->
+            <!--https://www.visitgreece.gr/images/1750x680/jpg/files/s_140094709_beaches-chania-elafonisi_1750x680.webp-->
+            <!--https://www.visitgreece.gr/images/1750x680/jpg/files/s_1119863444_beaches-rhodes_1750x680.webp-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1225938906_milos-mandrakia_1310x769.jpg-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_495291298_milos-kleftiko_1743x752.jpg-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_001_skiathos-hora_1743x752.jpg-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_001_skiathos-lalaria_1310x769.jpg-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_1127769038_thasos_1743x752.jpg-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_147759322_thasos_1310x769.jpg gillar denna-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_75292516_kerkyra-aggeorgios_1743x752.jpg gillar-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_635764444_corfu-palaiokastritsa_1310x769.jpg gillar-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_01_kefalonia-assos_1310x769.jpg-->
+            <!--https://www.visitgreece.gr/images/769x769/1/jpg/files/merakos_05_kefalonia-assos_769x769.webp gillar denna-->
+            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_326882015_lefkada-portokatsiki_1310x769.jpg gillar-->
+            <!--https://www.visitgreece.gr/images/769x769/1/jpg/files/s_779755510_lefkada_769x769.webp-->
+
+            <!--<Frame HeightRequest="200"
+                   WidthRequest="400">
+                <Image Source="greek_flag.svg"
+                           HeightRequest="200"
+                           WidthRequest="400"
+                           Aspect="AspectFill"/>
+            </Frame>-->
+                <!--<Frame HeightRequest="70"
+                       WidthRequest="250"
+                       Padding="0"
+                       CornerRadius="50"
+                       Grid.Row="0">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#0181FF"
+                                          Offset="1.0"/>
+                            <GradientStop Color="#C6DAEE"
+                                          Offset="0.1"/>
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <Label Text="GREECE"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           TextColor="White">
+                        <Label.Shadow>
+                            <Shadow Brush="Black"
+                                    Offset="4,4"
+                                    Radius="15"
+                                    Opacity="1"/>
+                        </Label.Shadow>
+                    </Label>
+                </Frame>-->
+                <!--Detta skapar en lucka högst upp, måste fixas!-->
+            
+            <Grid RowDefinitions="*,*">
+
+                <Frame Margin="50"
+                       CornerRadius="200"
+                       HeightRequest="200"
+                       WidthRequest="200"
+                       HasShadow="True"
+                       Grid.Row="0">
+                    <Image Source="paros.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="200"
+                       WidthRequest="200"/>
+                </Frame>
+                <Frame Margin="15"
+                       CornerRadius="25"
+                       HasShadow="True"
+                       Grid.Row="1">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#0181FF"
+                                          Offset="1.0"/>
+                            <GradientStop Color="#C6DAEE"
+                                          Offset="0.1"/>
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <Label Text="Här kommer det vara som en liten intro text? vad händer om 
+                           jag fortsätter att skriva massa skit här blir allt konstigt då eller 
+                           vad är det som händer?"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center">
+                        <Label.Shadow>
+                            <Shadow Brush="Black"
+                                    Offset="4,4"
+                                    Radius="1"
+                                    Opacity="1"/>
+                        </Label.Shadow>
+                    </Label>
+                </Frame>
+            </Grid>
+            
+            <Border BackgroundColor="#0080FF"
+                    HeightRequest="6"
+                    Margin="15"/>
+            
+            <Frame Margin="10"
+               CornerRadius="200"
+               HeightRequest="200"
+               WidthRequest="200"
+               HasShadow="True">
+                <Image Source="https://www.foodandwine.com/thmb/e6q-daVPkS5oQp2NJ4SHy0IIK-0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7-Food-and-Drink-Rules-Greeks-Live-By-FT-BLOG1122-39d3ed775ee24c71a88fcb1febeef149.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="200"
+                       WidthRequest="200"/>
+            </Frame>
+            <Frame Margin="15"
+               CornerRadius="25"
+               HasShadow="True">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#0181FF"
+                                          Offset="1.0"/>
+                        <GradientStop Color="#C6DAEE"
+                                          Offset="0.1"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Label Text="Mat text kommer komma här, med lite allmän info om grekisk mat."
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="White">
+                    <Label.Shadow>
+                        <Shadow Brush="Black"
+                                Offset="4,4"
+                                Radius="15"
+                                Opacity="1"/>
+                    </Label.Shadow>
+                </Label>
+
+            </Frame>
+
+
+            <Border BackgroundColor="#0080FF"
+                    HeightRequest="6"
+                    Margin="15"/>
+
+            <Frame Margin="10"
+               CornerRadius="200"
+               HeightRequest="200"
+               WidthRequest="200"
+               HasShadow="True">
+                <!--https://www.visitgreece.gr/images/1750x680/jpg/files/i_1226528317_acropolis_1750x680.webp ev denna-->
+                <Image Source="https://www.jonesaroundtheworld.com/wp-content/uploads/2021/10/Parthenon-Greece.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="200"
+                       WidthRequest="200"/>
+            </Frame>
+            <Frame Margin="15"
+               CornerRadius="25"
+               HasShadow="True">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#0181FF"
+                                          Offset="1.0"/>
+                        <GradientStop Color="#C6DAEE"
+                                          Offset="0.1"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Label Text="Historisk text om det grekiska kulturarvet kommer att komma här, kommer nog minska fontSize så det ser lite bättre ut."
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="White">
+                    <Label.Shadow>
+                        <Shadow Brush="Black"
+                                Offset="4,4"
+                                Radius="15"
+                                Opacity="1"/>
+                    </Label.Shadow>
+                </Label>
+
+            </Frame>
+
+
+            <Border BackgroundColor="#0080FF"
+                    HeightRequest="6"
+                    Margin="15"/>
+
+            <!--<Grid Padding="10"> -->
+            <!---TODO fixa alla sidor för denna samt navigering-->
+            <!--
             <Frame HeightRequest="125"
                    Padding="0"
                    BorderColor="#DDDDDD"
@@ -93,7 +272,9 @@
                 </Grid>
             </Frame>
         </Grid>
-        <Grid Padding="10"> <!--TODO fixa alla sidor för denna samt navigering-->
+        <Grid Padding="10"> -->
+            <!--TODO fixa alla sidor för denna samt navigering-->
+            <!--
             <Frame HeightRequest="125"
                    Padding="0"
                    BorderColor="#DDDDDD"
@@ -215,7 +396,8 @@
                 </Grid>
             </Frame>
             
-        </Grid>
+        </Grid>-->
 
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

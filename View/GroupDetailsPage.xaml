@@ -1,21 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Greece.GroupDetailsPage"
              xmlns:model="clr-namespace:Greece.Model"
              xmlns:viewmodel="clr-namespace:Greece.ViewModel"
-             x:DataType="viewmodel:IslandsViewModel"
-             x:Class="Greece.IslandsPage"
-             Title="{Binding Title}">
-    <Grid ColumnDefinitions="*,*"
-          ColumnSpacing="5"
-          RowDefinitions="*,Auto"
-          RowSpacing="0">
-        <RefreshView Grid.ColumnSpan="2"
-                     Command="{Binding GetIslandsCommand}"
-                     IsRefreshing="{Binding IsRefreshing}">
-            <CollectionView BackgroundColor="Transparent"
-                        ItemsSource="{Binding Islands}"
-                        SelectionMode="None">
+             x:DataType="viewmodel:GroupDetailsViewModel"
+             Title="{Binding Islandgroup.Group}">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="*, Auto"
+                  RowSpacing="0">
+                <Image Aspect="AspectFill"
+                       Grid.ColumnSpan="3"
+                       HeightRequest="360"
+                       HorizontalOptions="FillAndExpand"
+                       Source="{Binding Islandgroup.GroupImage}"/>
+            </Grid>
+            <VerticalStackLayout Padding="10" Spacing="10">
+
+                <!--<Label Text="{Binding Island.Population, StringFormat='Population: {0}'}"
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="{Binding Island.IslandGroup, StringFormat='Ögrupp: {0}'}"
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"/>-->
+                <Frame BackgroundColor="LightBlue"
+                       BorderColor="LightBlue"
+                       HasShadow="True">
+                    <!--Ändra denna så det ser snyggare ut-->
+                    <Label Text="{Binding Islandgroup.About}"
+                       FontSize="20"/>
+
+                </Frame>
+            </VerticalStackLayout>
+            <Label Text="The Islands"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextDecorations="Underline"
+                   Margin="20"/>
+            <CollectionView ItemsSource="{Binding Islandgroup.Islands}"
+                            SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Island">
                         <Grid Padding="10">
@@ -26,7 +52,8 @@
                                CornerRadius="10"
                                IsClippedToBounds="True">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer CommandParameter="{Binding .}"
+                                    <TapGestureRecognizer NumberOfTapsRequired="1"
+                                                      CommandParameter="{Binding .}"
                                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandsViewModel}}, Path=GoToDetailsCommand}"/>
                                 </Frame.GestureRecognizers>
                                 <Grid Padding="0"
@@ -45,11 +72,6 @@
                                            TextColor="White"
                                            HorizontalTextAlignment="Center"
                                            FontAttributes="Bold"/>
-                                        <Label Text="{Binding IslandGroup}"
-                                           FontSize="16"
-                                           HorizontalTextAlignment="Center"
-                                           FontAttributes="Bold"
-                                           TextColor="White"/>
                                     </VerticalStackLayout>
                                 </Grid>
                             </Frame>
@@ -57,35 +79,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </RefreshView>
-
-
-        <!--<Button Text="Get Islands"
-                Command="{Binding GetIslandsCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Margin="8"
-                CornerRadius="20"
-                BorderWidth="2"
-                HeightRequest="40"/>-->
-
-        <!--<Button Text="Find closest"
-                Command="{Binding GetClosestIslandCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Grid.Column="1"
-                Margin="8"
-                CornerRadius="20"
-                BorderWidth="2"
-                HeightRequest="40"/>-->
-
-        <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="CenterAndExpand"
-                           Grid.RowSpan="2"
-                           Grid.ColumnSpan="2"/>
-
-    </Grid>
-
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
