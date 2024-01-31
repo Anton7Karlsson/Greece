@@ -20,10 +20,6 @@ namespace Greece.Services
 
         public async Task<List<Island>> GetIslands()
         {
-            //var url = "https://github.com/Anton7Karlsson/app/blob/main/Islands.json";
-
-            //var response = await httpClient.GetAsync(url);
-
             var stream = await FileSystem.OpenAppPackageFileAsync("Islands.json");
             var reader = new StreamReader(stream);
             var contents = await reader.ReadToEndAsync();

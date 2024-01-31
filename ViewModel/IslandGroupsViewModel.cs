@@ -28,7 +28,7 @@ namespace Greece.ViewModel
         bool isRefreshing;
 
         [RelayCommand]
-        async Task GoToDetailsAsync(Island island)
+        async Task GoToIslandDetailsAsync(Island island)
         {
             if (island is null)
                 return;

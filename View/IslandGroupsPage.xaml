@@ -6,9 +6,6 @@
              x:DataType="viewmodel:IslandGroupsViewModel"
              x:Class="Greece.IslandGroupsPage"
              Title="{Binding Title}">
-    <!--<ContentPage.Resources>
-        <x:String x:Key="info">&#xf05a;</x:String>
-    </ContentPage.Resources>-->
     <Grid ColumnDefinitions="*,*"
           ColumnSpacing="5"
           RowDefinitions="*,Auto"
@@ -57,26 +54,7 @@
                                                         Opacity="1"/>
                                             </Label.Shadow>
                                         </Label>
-                                        <!--<Image Margin="150, 0, 150, 0">
-                                            <Image.Source>
-                                                <FontImageSource Glyph="&#xf05a;"
-                                                                 FontFamily="Free-Solid-900.otf"
-                                                                 Size="44"/>
-                                            </Image.Source>
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandGroupsViewModel}}, Path=GetIslandGroupInfoCommand}"/>
-                                            </Image.GestureRecognizers>
-                                        </Image>-->
-                                        <!--<Label FontFamily="FAS"
-                                                   Text="{StaticResource info}"
-                                                   TextColor="White"
-                                                   HorizontalTextAlignment="Center"
-                                                   VerticalTextAlignment="Center"
-                                                   FontSize="40"
-                                                   Margin="150, 0, 150, 0"> --><!---TODO: Gör så positionen är lika på alla skärmar, oavsettt storlek--><!--
-                                         </Label>-->
-                                        
+
                                     </VerticalStackLayout>
                                 </Grid>
                             </Frame>

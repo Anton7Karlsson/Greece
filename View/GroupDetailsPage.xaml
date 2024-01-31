@@ -18,17 +18,9 @@
                        Source="{Binding Islandgroup.GroupImage}"/>
             </Grid>
             <VerticalStackLayout Padding="10" Spacing="10">
-
-                <!--<Label Text="{Binding Island.Population, StringFormat='Population: {0}'}"
-                       FontSize="16"
-                       HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Island.IslandGroup, StringFormat='Ögrupp: {0}'}"
-                       FontSize="16"
-                       HorizontalTextAlignment="Center"/>-->
                 <Frame BackgroundColor="LightBlue"
                        BorderColor="LightBlue"
                        HasShadow="True">
-                    <!--Ändra denna så det ser snyggare ut-->
                     <Label Text="{Binding Islandgroup.About}"
                        FontSize="20"/>
 
@@ -52,18 +44,15 @@
                                CornerRadius="10"
                                IsClippedToBounds="True">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer NumberOfTapsRequired="1"
-                                                      CommandParameter="{Binding .}"
-                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandsViewModel}}, Path=GoToDetailsCommand}"/>
+                                    <TapGestureRecognizer 
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandGroupsViewModel}}, Path=GoToIslandDetailsCommand}"/>
                                 </Frame.GestureRecognizers>
                                 <Grid Padding="0"
                                   ColumnDefinitions="360">
-
                                     <Image Aspect="AspectFill"
                                    Source="{Binding Image}"
                                    WidthRequest="375"
                                    HeightRequest="200"/>
-
                                     <VerticalStackLayout Grid.Column="1"
                                                      Padding="10"
                                                      VerticalOptions="Center">

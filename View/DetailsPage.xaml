@@ -33,13 +33,7 @@
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
-                <!--<Image Aspect="AspectFill"
-                       Grid.ColumnSpan="3"
-                       HeightRequest="160"
-                       HorizontalOptions="FillAndExpand"
-                       Source="{Binding Island.Image}"/>-->
             </Grid>
-
 
             <Button Text="Show on Map"
                     Command="{Binding OpenMapCommand}"
@@ -62,7 +56,6 @@
                 <Frame BackgroundColor="LightBlue"
                        BorderColor="LightBlue"
                        HasShadow="True">
-                    <!--Ändra denna så det ser snyggare ut-->
                     <Label Text="{Binding Island.Details}"
                        FontSize="20"/>
                 

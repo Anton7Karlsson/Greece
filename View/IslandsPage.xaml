@@ -58,27 +58,6 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </RefreshView>
-
-
-        <!--<Button Text="Get Islands"
-                Command="{Binding GetIslandsCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Margin="8"
-                CornerRadius="20"
-                BorderWidth="2"
-                HeightRequest="40"/>-->
-
-        <!--<Button Text="Find closest"
-                Command="{Binding GetClosestIslandCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Grid.Column="1"
-                Margin="8"
-                CornerRadius="20"
-                BorderWidth="2"
-                HeightRequest="40"/>-->
-
         <ActivityIndicator IsVisible="{Binding IsBusy}"
                            IsRunning="{Binding IsBusy}"
                            HorizontalOptions="FillAndExpand"

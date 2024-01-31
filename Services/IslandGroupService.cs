@@ -17,11 +17,8 @@ namespace Greece.Services
         {
             httpClient = new HttpClient();
         }
-
-        //List<IslandGroup> islandGroupList = new();
         public async Task<List<IslandGroup>> GetIslandGroups()
         {
-            //if (islandGroupList?.Count > 0) return islandGroupList;
 
             var stream = await FileSystem.OpenAppPackageFileAsync("IslandGroups.json");
             var reader = new StreamReader(stream);

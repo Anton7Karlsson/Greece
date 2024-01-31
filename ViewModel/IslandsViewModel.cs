@@ -28,46 +28,7 @@ namespace Greece.ViewModel
         [ObservableProperty]
         bool isRefreshing;
 
-        //[RelayCommand]
-        //async Task GetClosestIslandAsync()
-        //{
-        //    if (IsBusy || Islands.Count == 0)
-        //        return;
-
-        //    try
-        //    {
-        //        var location = await geolocation.GetLastKnownLocationAsync();
-        //        if (location is null)
-        //        {
-        //            location = await geolocation.GetLocationAsync(
-        //                new GeolocationRequest
-        //                {
-        //                    DesiredAccuracy = GeolocationAccuracy.Medium,
-        //                    Timeout = TimeSpan.FromSeconds(30),
-        //                });
-        //        }
-
-        //        if (location is null)
-        //            return;
-
-        //        var first = Islands.OrderBy(m =>
-        //            location.CalculateDistance(m.Latitude, m.Longitude, DistanceUnits.Kilometers)).FirstOrDefault();
-
-        //        if (first is null)
-        //            return;
-
-        //        await Shell.Current.DisplayAlert("Closest Island",
-        //            $"{first.Name} in {first.IslandGroup}", "OK");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Debug.WriteLine(ex);
-        //        await Shell.Current.DisplayAlert("Error!",
-        //            $"Unable to get closest island: {ex.Message}", "OK");
-        //    }
-        //}
-
-
+        
         [RelayCommand]
         async Task GoToDetailsAsync(Island island)
         {
@@ -82,7 +43,7 @@ namespace Greece.ViewModel
         }
 
         [RelayCommand]
-        async Task GetIslandsAsync() // Kraschar när man uppdaterar och det redan finns öar
+        async Task GetIslandsAsync() 
         {
 
             if (IsBusy) return;
