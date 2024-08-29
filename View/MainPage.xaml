@@ -1,31 +1,189 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodel="clr-namespace:Greece.ViewModel"
-             x:DataType="viewmodel:MainPageViewModel"
+             xmlns:model="clr-namespace:Greece.Model"
              x:Class="Greece.View.MainPage"
              Title="Greece">
-    <ScrollView>
-        
-        <!--TODO-->
-        
-        <VerticalStackLayout >
-            <!---https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_03_zakynthos-navagio_1310x769.jpg-->
-            <!--https://www.visitgreece.gr/images/1750x680/jpg/files/s_140094709_beaches-chania-elafonisi_1750x680.webp-->
-            <!--https://www.visitgreece.gr/images/1750x680/jpg/files/s_1119863444_beaches-rhodes_1750x680.webp-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1225938906_milos-mandrakia_1310x769.jpg-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_495291298_milos-kleftiko_1743x752.jpg-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_001_skiathos-hora_1743x752.jpg-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_001_skiathos-lalaria_1310x769.jpg-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_1127769038_thasos_1743x752.jpg-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_147759322_thasos_1310x769.jpg gillar denna-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_75292516_kerkyra-aggeorgios_1743x752.jpg gillar-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_635764444_corfu-palaiokastritsa_1310x769.jpg gillar-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_01_kefalonia-assos_1310x769.jpg-->
-            <!--https://www.visitgreece.gr/images/769x769/1/jpg/files/merakos_05_kefalonia-assos_769x769.webp gillar denna-->
-            <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_326882015_lefkada-portokatsiki_1310x769.jpg gillar-->
-            <!--https://www.visitgreece.gr/images/769x769/1/jpg/files/s_779755510_lefkada_769x769.webp-->
-            
-        </VerticalStackLayout>
-    </ScrollView>
+    <!--:DataType="viewmodel:MainPageViewModel"
+    xmlns:viewmodel="clr-namespace:Greece.ViewModel"
+    -->
+
+    <!---https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_03_zakynthos-navagio_1310x769.jpg-->
+    <!--https://www.visitgreece.gr/images/1750x680/jpg/files/s_140094709_beaches-chania-elafonisi_1750x680.webp-->
+    <!--https://www.visitgreece.gr/images/1750x680/jpg/files/s_1119863444_beaches-rhodes_1750x680.webp-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_1225938906_milos-mandrakia_1310x769.jpg-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_495291298_milos-kleftiko_1743x752.jpg-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_001_skiathos-hora_1743x752.jpg-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_001_skiathos-lalaria_1310x769.jpg-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_1127769038_thasos_1743x752.jpg-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_147759322_thasos_1310x769.jpg gillar denna-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_75292516_kerkyra-aggeorgios_1743x752.jpg gillar-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/i_635764444_corfu-palaiokastritsa_1310x769.jpg gillar-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/merakos_01_kefalonia-assos_1310x769.jpg-->
+    <!--https://www.visitgreece.gr/images/769x769/1/jpg/files/merakos_05_kefalonia-assos_769x769.webp gillar denna-->
+    <!--https://www.visitgreece.gr/images/1310x769/1/jpg/files/s_326882015_lefkada-portokatsiki_1310x769.jpg gillar-->
+    <!--https://www.visitgreece.gr/images/769x769/1/jpg/files/s_779755510_lefkada_769x769.webp-->
+
+    <Grid RowDefinitions="*,*,*,*">
+        <!--<VerticalStackLayout>-->
+        <Grid Grid.Row="0"
+              Grid.ColumnSpan="2"
+              Margin="25">
+            <Frame
+               CornerRadius="15"
+               HeightRequest="120"
+               Padding="0">
+                <Grid>
+                    <Image Aspect="AspectFill"
+                           HeightRequest="120"
+                           Source="assos.webp"
+                           />
+                    <RoundRectangle
+                        CornerRadius="15"
+                        Fill="#00C2FF"
+                        Margin="25,30"
+                        Opacity="0.55"/>
+                    <Label Text="Explore all the islands"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           TextDecorations="Underline"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           />
+                </Grid>
+            </Frame>
+
+
+        </Grid>
+
+        <Grid Grid.Row="1"
+               Grid.ColumnSpan="2"
+               Margin="25">
+            <Frame
+               CornerRadius="15"
+               HeightRequest="120"
+               Padding="0">
+                <Grid>
+                    <Image Aspect="AspectFill"
+                    HeightRequest="120"
+                    Source="palaiokastritsa.jpg"
+                    />
+                    <RoundRectangle
+                        CornerRadius="15"
+                        Fill="#00C2FF"
+                        Margin="25,30"
+                        Opacity="0.55"/>
+                    <Label Text="Explore all island groups"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        TextColor="White"
+                        TextDecorations="Underline"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                    />
+                </Grid>
+            </Frame>
+
+
+        </Grid>
+
+        <Grid Grid.Row="2"
+              Grid.ColumnSpan="2"
+              Margin="25">
+            <Frame
+                CornerRadius="15"
+                HeightRequest="120"
+                Padding="0">
+                <Grid>
+                    <Image 
+                        Aspect="AspectFill"
+                        HeightRequest="120"
+                        Source="plan.webp"
+                    />
+                    <RoundRectangle
+                       CornerRadius="15"
+                       Fill="#00C2FF"
+                       Margin="25,30"
+                       Opacity="0.55"
+                    />
+                    <Label 
+                        Text="Book flight and hotel"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        TextDecorations="Underline"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                    />
+                </Grid>
+            </Frame>
+
+        </Grid>
+        <Grid Grid.Row="3"
+              Margin="25">
+            <!-- TODO: FLYTTA DETTA HÖGST UPP TILL HÖGER, BREDVID GREECE!!!
+            <Ellipse Fill="#00C2FF"
+                     HeightRequest="70"
+                     WidthRequest="70"
+                     Grid.Row="3"
+                     Grid.Column="0"
+                             />
+            <Label Text="AK"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Margin="35"
+                   TextColor="White"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="Center"/>-->
+
+            <Frame BackgroundColor="#00C2FF"
+                   Opacity="0.55"
+                   Grid.Row="3"
+                   CornerRadius="15"
+                   HeightRequest="120"
+                   Padding="0">
+                <Grid RowDefinitions="15 , *"
+                      Margin="5"
+                      Padding="0">
+                    <Label Grid.Row="0"
+                           Text="Favorite Islands"
+                           FontSize="14"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           VerticalOptions="Start"
+                           VerticalTextAlignment="Start"
+                           HorizontalOptions="Center"
+                           Padding="0"/>
+
+                    <CarouselView Grid.Row="1"
+                                  ItemsSource="{Binding Islands}"
+                                  PeekAreaInsets="110"
+                                  HorizontalOptions="Start"
+                                  Margin="0">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <Border Stroke="#00C2FF"
+                                        StrokeShape="Ellipse"
+                                        StrokeThickness="2"
+                                        WidthRequest="80"
+                                        HeightRequest="80"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        Padding="0"
+                                        Grid.Row="1">
+                                    <Image Aspect="AspectFill" Source="{Binding Image}"/>
+                                </Border>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+
+
+                </Grid>
+            </Frame>
+        </Grid>
+        <!--</VerticalStackLayout>-->
+    </Grid>
 </ContentPage>

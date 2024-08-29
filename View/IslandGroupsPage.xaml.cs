@@ -7,4 +7,8 @@ public partial class IslandGroupsPage : ContentPage
 		InitializeComponent();
         BindingContext = viewModel;
     }
+    private async void GroupDetails(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(IslandGroupsPage));
+    }
 }

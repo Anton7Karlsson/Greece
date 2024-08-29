@@ -18,50 +18,162 @@
                        Source="{Binding Islandgroup.GroupImage}"/>
             </Grid>
             <VerticalStackLayout Padding="10" Spacing="10">
-                <Frame BackgroundColor="LightBlue"
+                <Frame BackgroundColor="#00C2FF"
                        BorderColor="LightBlue"
                        HasShadow="True">
                     <Label Text="{Binding Islandgroup.About}"
-                       FontSize="20"/>
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
 
                 </Frame>
+
             </VerticalStackLayout>
-            <Label Text="The Islands"
+
+            <!--Ändra detta så det bindar med den aktuella ögruppen och inte är hårdkodat-->
+            <VerticalStackLayout>
+                <Grid ColumnDefinitions="*,*"
+                      RowDefinitions="*,*,*">
+                    <Frame Grid.Column="0"
+                           Grid.RowSpan="3"
+                           Margin="20,20,0,20"
+                           Padding="0"
+                           HeightRequest="80"
+                           WidthRequest="80"
+                           CornerRadius="100">
+                        <Image Source="greek_islandgroups.jpeg"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="- Amazing Views"
+                               FontAttributes="Bold"
+                               Padding="0"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               />
+                </Grid>
+
+                <Grid ColumnDefinitions="*,*"
+                       RowDefinitions="*,*,*">
+                    <Frame Grid.Column="0"
+                           Grid.RowSpan="3"
+                           Margin="20,20,0,20"
+                           Padding="0"
+                           HeightRequest="80"
+                           WidthRequest="80"
+                           CornerRadius="100">
+                        <Image Source="greek_islandgroups.jpeg"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="- Beautiful Beaches"
+                               FontAttributes="Bold"
+                               Padding="0"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               />
+                </Grid>
+            </VerticalStackLayout>
+
+
+
+            <Frame BackgroundColor="#00C2FF"
+                   BorderColor="LightBlue"
+                   HasShadow="True"
+                   HeightRequest="60"
+                   WidthRequest="160"
+                   CornerRadius="15"
+                   Padding="0"
+                   Margin="20">
+                <Label Text="The Islands"
                    FontSize="Large"
+                   TextColor="White"
                    FontAttributes="Bold"
                    HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Padding="0"
                    TextDecorations="Underline"
-                   Margin="20"/>
+                   />
+            </Frame>
             <CollectionView ItemsSource="{Binding Islandgroup.Islands}"
                             SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Island">
                         <Grid Padding="10">
-                            <Frame HeightRequest="200"
+                            <Frame HeightRequest="300"
                                Padding="0"
                                BorderColor="#DDDDDD"
                                HasShadow="True"
                                CornerRadius="10"
-                               IsClippedToBounds="True">
+                               BackgroundColor="#00C2FF">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer 
-                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:IslandGroupsViewModel}}, Path=GoToIslandDetailsCommand}"/>
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GroupDetailsViewModel}}, Path=GoToIslandDetailsCommand}"/>
                                 </Frame.GestureRecognizers>
                                 <Grid Padding="0"
-                                  ColumnDefinitions="360">
+                                      RowDefinitions="200, *,*"
+                                      ColumnDefinitions="*,*">
                                     <Image Aspect="AspectFill"
-                                   Source="{Binding Image}"
-                                   WidthRequest="375"
-                                   HeightRequest="200"/>
-                                    <VerticalStackLayout Grid.Column="1"
-                                                     Padding="10"
-                                                     VerticalOptions="Center">
-                                        <Label Text="{Binding Name}"
+                                           Source="{Binding Image}"
+                                           Grid.ColumnSpan="2"/>
+
+                                    <Label Text="{Binding Name}"
+                                           Grid.Row="1"
                                            FontSize="20"
                                            TextColor="White"
-                                           HorizontalTextAlignment="Center"
-                                           FontAttributes="Bold"/>
-                                    </VerticalStackLayout>
+                                           Padding="10"
+                                           HorizontalTextAlignment="Start"
+                                           FontAttributes="Bold"
+                                           TextDecorations="Underline"/>
+
+                                    <Frame Grid.Column="1"
+                                           Grid.Row="1"
+                                           CornerRadius="15"
+                                           HeightRequest="45"
+                                           Opacity="0.55"
+                                           Margin="5"
+                                           Padding="0">
+
+                                        <CollectionView ItemsLayout="HorizontalList">
+                                            <CollectionView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Label Text="Hej"/>
+                                                </DataTemplate>
+                                            </CollectionView.ItemTemplate>
+                                        </CollectionView>
+
+                                        <!--<Label Text="HEJ"
+                                                   Grid.Column="1"
+                                                   Grid.Row="1"
+                                                   HorizontalTextAlignment="Center"
+                                                   VerticalTextAlignment="Center"/>-->
+                                    </Frame>
+
+
+                                    <Label Text="{Binding IslandGroup}"
+                                           Grid.Row="2"
+                                           FontSize="14"
+                                           Padding="10"
+                                           HorizontalTextAlignment="Start"
+                                           FontAttributes="Bold"
+                                           TextColor="White"/>
+                                    <Button Text="Explore here!"
+                                            Grid.Column="1"
+                                            Grid.Row="2"
+                                            CornerRadius="15"
+                                            Margin="5"
+                                            TextColor="#0038FF"
+                                            BackgroundColor="White"
+                                            BorderColor="#0038FF"
+                                            BorderWidth="2"
+                                            FontAttributes="Bold"
+                                            FontSize="18"
+                                            Padding="0"
+                                            CommandParameter="{Binding .}"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GroupDetailsViewModel}}, Path=GoToIslandDetailsCommand}"/>
                                 </Grid>
                             </Frame>
                         </Grid>

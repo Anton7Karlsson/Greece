@@ -34,6 +34,77 @@
                     </CarouselView.ItemTemplate>
                 </CarouselView>
             </Grid>
+            <Frame CornerRadius="0"
+                   BackgroundColor="#00C2FF"
+                   HeightRequest="100"
+                   Padding="0">
+                <Grid ColumnDefinitions="35,35,35,35,35,35,35,35"
+                      ColumnSpacing="10"
+                      RowDefinitions="35,35"
+                      RowSpacing="5"
+                      Padding="0"
+                      HeightRequest="80"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center">
+                    <Label Grid.Column="0"
+                           Grid.Row="0"
+                           Text="10/7"
+                           TextDecorations="Underline"
+                           VerticalTextAlignment="Center"/>
+                    <Label Grid.Column="1"
+                           Grid.Row="0"
+                           Text="11/7"
+                           TextDecorations="Underline"
+                           VerticalTextAlignment="Center"/>
+                    <Label Grid.Column="2"
+                           Grid.Row="0"
+                           Text="12/7"
+                           TextDecorations="Underline"
+                           VerticalTextAlignment="Center"/>
+                    <Frame Grid.Column="3"
+                           Grid.Row="0">
+                        
+                    </Frame>
+                    <Frame Grid.Column="4"
+                           Grid.Row="0">
+                        
+                    </Frame>
+                    <Frame Grid.Column="5"
+                           Grid.Row="0">
+
+                    </Frame>
+                    <Frame Grid.Column="6"
+                           Grid.ColumnSpan="2"
+                           Grid.RowSpan="2">
+
+                    </Frame>
+                    <Frame Grid.Column="0"
+                           Grid.Row="1">
+                        
+                    </Frame>
+                    <Frame Grid.Column="1"
+                           Grid.Row="1">
+                        
+                    </Frame>
+                    <Frame Grid.Column="2"
+                           Grid.Row="1">
+                        
+                    </Frame>
+                    <Frame Grid.Column="3"
+                           Grid.Row="1">
+                        
+                    </Frame>
+                    <Frame Grid.Column="4"
+                           Grid.Row="1">
+                        
+                    </Frame>
+                    <Frame Grid.Column="5"
+                           Grid.Row="1">
+
+                    </Frame>
+                </Grid>
+                
+            </Frame>
 
             <Button Text="Show on Map"
                     Command="{Binding OpenMapCommand}"
@@ -53,13 +124,49 @@
                 <Label Text="{Binding Island.IslandGroup, StringFormat='Ögrupp: {0}'}"
                        FontSize="16"
                        HorizontalTextAlignment="Center"/>
-                <Frame BackgroundColor="LightBlue"
-                       BorderColor="LightBlue"
-                       HasShadow="True">
-                    <Label Text="{Binding Island.Details}"
-                       FontSize="20"/>
+                <!--Vet ej om ovanstående ska vara med-->
                 
-                </Frame>
+                <Label Text="{Binding Island.Details}"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Margin="10"/>
+
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Grid ColumnDefinitions="*,*">
+                    <Frame Grid.Column="0"
+                           Margin="20,20,0,20"
+                           Padding="0"
+                           HeightRequest="80"
+                           WidthRequest="80"
+                           CornerRadius="100">
+                        <Image Source="greek_islandgroups.jpeg"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="- Beautiful Beaches"
+                           FontAttributes="Bold"
+                           Padding="0"
+                           Grid.Column="1"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    
+                    <Frame Grid.Column="0"
+                           Margin="20,20,0,20"
+                           Padding="0"
+                           HeightRequest="80"
+                           WidthRequest="80"
+                           CornerRadius="100">
+                        <Image Source="greek_islandgroups.jpeg"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="- Popular Destinations"
+                           FontAttributes="Bold"
+                           Padding="0"
+                           Grid.Column="1"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                </Grid>
             </VerticalStackLayout>
 
         </VerticalStackLayout>
